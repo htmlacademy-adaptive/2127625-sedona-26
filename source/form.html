@@ -17,24 +17,22 @@
 
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--active">Главная</a>
+          <a class="navigation__link" href="./index.html">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#">Фото и видео</a>
+          <a class="navigation__link" href="./catalog.html">Фото и видео</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#">Форма отзыва</a>
+          <a class="navigation__link navigation__link--active">Форма отзыва</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#">HTML Academy</a>
+          <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
         </li>
       </ul>
     </nav>
 
-    <div class="page-header__slogan">
-      <div class="page-header__image">
-        <img src="#" alt="Добро пожаловать в великолепную Седону">
-      </div>
+    <div class="page-header__image">
+      <img src="#" alt="Добро пожаловать в великолепную Седону">
     </div>
   </header>
 
@@ -56,24 +54,18 @@
           <legend class="form__title">Представьтесь:</legend>
           <ul class="form__list">
             <li class="form__item">
-              <label class="form__label">
-                Имя<sup>*</sup>:
-                <input class="form__input" type="text" name="name" value="Артем">
-              </label>
+              <label class="form__label" for="name">Имя<sup>*</sup>:</label>
+              <input class="form__input" type="text" id="name" name="name">
             </li>
 
             <li class="form__item">
-              <label class="form__label">
-                Фамилия<sup>*</sup>:
-                <input class="form__input" type="text" name="surname" value="Малафеев">
-              </label>
+              <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
+              <input class="form__input" type="text" id="surname" name="surname">
             </li>
 
             <li class="form__item">
-              <label class="form__element-label">
-                Отчество<sup>*</sup>:
-                <input class="form__element-input" type="text" name="patronymic" value="Евгеньевич">
-              </label>
+              <label class="form__element-label" for="patronymic">Отчество<sup>*</sup>:</label>
+              <input class="form__element-input" type="text" id="patronymic" name="patronymic">
             </li>
           </ul>
         </fieldset>
@@ -82,17 +74,13 @@
           <legend class="form__title">Контактная информация:</legend>
           <ul class="form__list">
             <li class="form__item">
-              <label class="form__label">
-                Контактный телефон<sup>*</sup>:
-                <input class="form__input form__input--telephone" type="tel" name="telephone" placeholder="Введите телефон">
-              </label>
+              <label class="form__label" for="telephone">Контактный телефон<sup>*</sup>:</label>
+              <input class="form__input form__input--telephone" id="telephone" type="tel" name="telephone" placeholder="Введите телефон">
             </li>
 
             <li class="form__item">
-              <label class="form__label">
-                Электронная почта<sup>*</sup>:
-                <input class="form__input form__input--email" type="email" name="email" placeholder="Введите e-mail">
-              </label>
+              <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
+              <input class="form__input form__input--email" id="email" type="email" name="email" placeholder="Введите e-mail">
             </li>
           </ul>
         </fieldset>
@@ -102,7 +90,7 @@
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">
-                <input class="form__radio form__radio--checked" type="radio" name="mark" value="good">
+                <input class="form__radio checked" type="radio" name="mark" value="good">
                 <span class="form__text">Скорее положительное</span>
               </label>
             </li>
@@ -128,28 +116,28 @@
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">
-                <input class="form__checkbox form__checkbox--active" name="bridge" type="checkbox">
+                <input class="form__checkbox active" name="attractions" value="bridge" type="checkbox">
                 <span class="form__text">Мост Дьявола</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="form__label">
-                <input class="form__checkbox" name="mountain" type="checkbox">
+                <input class="form__checkbox" name="attractions" value="mountain" type="checkbox">
                 <span class="form__text">Гора-Колокол</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="form__label">
-                <input class="form__checkbox form-checkbox--active" name="park" type="checkbox">
+                <input class="form__checkbox form-checkbox--active" name="attractions" value="park" type="checkbox">
                 <span class="form__text">Слайд-парк</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="form__label">
-                <input class="form__checkbox" name="rocks" type="checkbox">
+                <input class="form__checkbox" name="attractions" value="rocks" type="checkbox">
                 <span class="form__text">Красные скалы</span>
               </label>
           </li>
@@ -204,13 +192,13 @@
     </section>
   </footer>
 
-  <div class="modal modal--wrong">
+  <div class="modal modal--error">
     <h2 class="modal__header">Что-то пошло не так!</h2>
     <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="modal__button" type="button">Ок</button>
   </div>
 
-  <div class="modal modal--right">
+  <div class="modal modal--success">
     <h2 class="modal__header">Что-то пошло не так!</h2>
     <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем на сайте.</p>
     <button class="modal__button" type="button">Закрыть окно</button>
