@@ -1,0 +1,49 @@
+.card {
+  position: relative;
+  padding: 25px 0 30px;
+
+  text-align: left;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -20px;
+
+    height: 1px;
+    width: calc(100% + 40px);
+
+    background-color: @border-light;
+  }
+}
+
+.card__title {
+  margin: 0;
+  margin-top: 20px;
+
+  text-transform: uppercase;
+}
+
+.card__description {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.card__reaction {
+  margin-top: 25px;
+}
+
+.card__likes {
+  margin-left: 15px;
+
+  font-weight: 700;
+}
+
+.card__button {
+  border: 0;
+  background: gray;
+
+  width: 23px;
+  height: 23px;
+}
