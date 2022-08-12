@@ -1,0 +1,37 @@
+.modal {
+  margin-top: 50px;
+  padding-top: 20px;
+  background-color: @bg-white;
+
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.modal__header {
+  margin: 0;
+  margin-top: 20px;
+
+  font-size: 18px;
+}
+
+.modal__bottom {
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: @bg-grey;
+}
+
+.modal__description {
+  margin: 35px 54px;
+  margin-bottom: 0;
+}
+
+.modal__button {
+  .button();
+
+  &--error {
+    .button(180px);
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
