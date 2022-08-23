@@ -145,7 +145,7 @@
   display: none;
 }
 
-.review__radio:checked ~ .review__radio-control:after {
+.review__radio:checked ~ .review__radio-control::after {
   display: block;
 }
 
@@ -175,7 +175,7 @@
   cursor: pointer;
 }
 
-.review__checkbox-control:after {
+.review__checkbox-control::after {
   position: absolute;
 
   top: 2px;
@@ -193,7 +193,7 @@
   display: none;
 }
 
-.review__checkbox:checked ~ .review__checkbox-control:after {
+.review__checkbox:checked ~ .review__checkbox-control::after {
   display: block;
 }
 
