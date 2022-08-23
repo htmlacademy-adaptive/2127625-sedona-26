@@ -1,17 +1,38 @@
-.button(@width: 280px) {
+.button() {
   box-sizing: border-box;
   display: inline-block;
 
-  width: @width;
   padding: 20px 0;
-  margin: 0 auto;
 
   font-size: 18px;
   font-weight: 700;
+
   border: 0;
+
   text-decoration: none;
   text-transform: uppercase;
 
   color: @bg-white;
   background-color: @bg-blue;
+}
+
+.container() {
+  min-width: 320px;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+.image() {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.list() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }

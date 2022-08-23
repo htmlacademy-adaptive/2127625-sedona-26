@@ -1,55 +1,97 @@
 .review {
-  padding: 0 20px;
+  .container();
+
   background-color: @bg-white;
 }
 
-.review__form-group {
+.review__group {
+  position: relative;
+
   margin: 0;
   padding: 0;
   border: 0;
 
   text-align: left;
+
+  &--border::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    min-width: 320px;
+    height: 1px;
+
+    background-color: #d6d6d6;
+
+    content: "";
+  }
+
+  @media (min-width: @tablet-width) {
+    &--border::before {
+      display: none;
+    }
+  }
 }
 
-.review__form-list {
+.review__container {
+  padding: 25px 20px 40px;
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 60px 40px;
+  }
+}
+
+.review__list {
+  .list();
+
+  margin-top: 20px;
+
+  &--flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+
+    margin-top: 25px;
+
+    @media (min-width: @tablet-width) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      column-gap: 50px;
+    }
+  }
+}
+
+.review__item {
+  margin-top: 15px;
+}
+
+.review__title {
   margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.review__form-title {
-  padding: 0;
-  padding-top: 30px;
-
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.5;
 
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
-.review__form-item {
-  margin-top: 20px;
-}
-
-.review__form-label {
-  display: block;
-
-  margin-left: 15px;
-
+.form__label {
   text-transform: uppercase;
 }
 
-.review__form-input {
+.review__input {
   box-sizing: border-box;
+  display: block;
 
-  padding: 15px;
-  border: 0;
+  padding: 20px;
 
   width: 100%;
-  height: 58px;
+  height: 56px;
+
+  border: 0;
 
   font-size: 18px;
   font-weight: 700;
@@ -57,39 +99,143 @@
   background-color: @bg-grey;
 }
 
-.review__form-text {
+// radio
+.review__radio-control {
+  position: relative;
+
+  padding-left: 65px;
+
   font-size: 18px;
   font-weight: 700;
-
-  text-transform: none;
 }
 
-.review__form-textarea {
+.review__radio-control::before {
+  position: absolute;
+
+  left: 0;
+  top: -13px;
+
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+
+  background-color: @bg-dark-grey;
+
+  content: "";
+
+  cursor: pointer;
+}
+
+.review__radio-control::after {
+  position: absolute;
+
+  top: 2px;
+  left: 16px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/point.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  content: "";
+
+  display: none;
+}
+
+.review__radio:checked ~ .review__radio-control:after {
+  display: block;
+}
+
+// checkbox
+.review__checkbox-control {
+  position: relative;
+
+  padding-left: 65px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.review__checkbox-control::before {
+  position: absolute;
+
+  left: 0;
+  top: -13px;
+
+  width: 46px;
+  height: 46px;
+
+  background-color: @bg-dark-grey;
+
+  content: "";
+
+  cursor: pointer;
+}
+
+.review__checkbox-control:after {
+  position: absolute;
+
+  top: 2px;
+  left: 12px;
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  content: "";
+
+  display: none;
+}
+
+.review__checkbox:checked ~ .review__checkbox-control:after {
+  display: block;
+}
+
+.review__textarea {
   box-sizing: border-box;
+
+  display: block;
 
   width: 100%;
   min-height: 150px;
-  margin-top: 25px;
-  padding: 25px 15px;
+  max-width: 775px;
 
+  margin: 20px auto 0;
+  padding: 15px;
   border: 0;
+
+  resize: none;
+
   font-size: 18px;
   font-weight: 700;
+
+  color: rgba(0, 0, 0, 0.3);
+
   background-color: @bg-grey;
-  resize: none;
 }
 
-.review__form-button {
+.review__button {
   .button();
 
-  margin-top: 55px;
-  font-size: 21px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    max-width: 384px;
+  }
 }
 
-.review__form-note {
+.review__note {
   display: block;
 
-  font-size: 12px;
   text-align: right;
+
+  font-size: 12px;
   text-transform: uppercase;
 }
