@@ -43,52 +43,54 @@
   <main class="main-container">
     <header class="main-header">
       <div class="main-header__container">
-        <h2 class="main-header__subtitle">
+        <h2 class="main-header__title">
           Оставьте свой отзыв
         </h2>
         <p class="main-header__text">
-          Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br>
+          а также о посещенных вами достопримечательностях
         </p>
       </div>
     </header>
 
+    <!-- блок review -->
     <section class="review">
       <h2 class="visually-hidden">Форма отзыва</h2>
       <form class="review__form" action="#" method="post">
-        <fieldset class="review__group review__group--border">
+        <fieldset class="review__group review__group--info review__group--border">
           <div class="review__container">
             <h3 class="review__title">Представьтесь:</h3>
             <ul class="review__list">
               <li class="review__item">
-                <label class="review__label" for="name">Имя<sup>*</sup>:</label>
-                <input class="review__input" type="text" id="name" name="name">
+                <label class="review__label review__label--user" for="name">Имя<sup>*</sup>:</label>
+                <input class="review__input" type="text" id="name" name="name" placeholder="Артем">
               </li>
 
               <li class="review__item">
-                <label class="review__label" for="surname">Фамилия<sup>*</sup>:</label>
-                <input class="review__input" type="text" id="surname" name="surname">
+                <label class="review__label review__label--user" for="surname">Фамилия<sup>*</sup>:</label>
+                <input class="review__input" type="text" id="surname" name="surname" placeholder="Малафеев">
               </li>
 
               <li class="review__item">
-                <label class="review__label" for="patronymic">Отчество:</label>
-                <input class="review__input" type="text" id="patronymic" name="patronymic">
+                <label class="review__label review__label--user" for="patronymic">Отчество:</label>
+                <input class="review__input" type="text" id="patronymic" name="patronymic" placeholder="Евгеньевич">
               </li>
             </ul>
           </div>
         </fieldset>
 
-        <fieldset class="review__group review__group--border">
+        <fieldset class="review__group review__group--info review__group--border">
           <div class="review__container">
             <h3 class="review__title">Контактная информация:</h3>
             <ul class="review__list">
               <li class="review__item">
-                <label class="review__label" for="telephone">Контактный телефон<sup>*</sup>:</label>
+                <label class="review__label review__label--user" for="telephone">Контактный телефон<sup>*</sup>:</label>
                 <input class="review__input" id="telephone" type="tel" name="telephone" placeholder="Введите телефон">
                 <span class="review__logo review__logo--telephone"></span>
               </li>
 
               <li class="review__item">
-                <label class="review__label" for="email">Электронная почта<sup>*</sup>:</label>
+                <label class="review__label review__label--user" for="email">Электронная почта<sup>*</sup>:</label>
                 <input class="review__input" id="email" type="email" name="email" placeholder="Введите e-mail">
                 <span class="review__logo review__logo--email"></span>
               </li>
@@ -99,7 +101,7 @@
         <!-- radio -->
         <fieldset class="review__group review__group--border">
           <div class="review__container">
-            <h3 class="review__title">Ваше общее впечатление:</h3>
+            <h3 class="review__title review__title--border">Ваше общее впечатление:</h3>
             <ul class="review__list review__list--flex">
               <li class="review__item">
                 <label class="review__label">
@@ -128,33 +130,43 @@
         <!-- checkbox -->
         <fieldset class="review__group review__group--border">
           <div class="review__container">
-            <h3 class="review__title">Посещенные достопримечательности:</h3>
+            <h3 class="review__title review__title--border">
+              Посещенные достопримечательности:
+            </h3>
             <ul class="review__list review__list--flex">
               <li class="review__item">
                 <label class="review__label">
                   <input class="review__checkbox visually-hidden" name="attractions" value="bridge" type="checkbox">
-                  <span class="review__checkbox-control">Мост Дьявола</span>
+                  <span class="review__checkbox-control">
+                    Мост Дьявола
+                  </span>
                 </label>
               </li>
 
               <li class="review__item">
                 <label class="review__label">
                   <input class="review__checkbox visually-hidden" name="attractions" value="mountain" type="checkbox">
-                  <span class="review__checkbox-control">Гора-Колокол</span>
+                  <span class="review__checkbox-control">
+                    Гора-Колокол
+                  </span>
                 </label>
               </li>
 
               <li class="review__item">
                 <label class="review__label">
                   <input class="review__checkbox visually-hidden" name="attractions" value="park" type="checkbox">
-                  <span class="review__checkbox-control">Слайд-парк</span>
+                  <span class="review__checkbox-control">
+                    Слайд-парк
+                  </span>
                 </label>
               </li>
 
               <li class="review__item">
                 <label class="review__label">
                   <input class="review__checkbox visually-hidden" name="attractions" value="rocks" type="checkbox">
-                  <span class="review__checkbox-control">Красные скалы</span>
+                  <span class="review__checkbox-control">
+                    Красные скалы
+                  </span>
                 </label>
             </li>
             </ul>
@@ -163,13 +175,17 @@
 
         <fieldset class="review__group review__group--border">
           <div class="review__container">
-            <h3 class="review__title">Опишите свои эмоции:</h3>
+            <h3 class="review__title review__title--border">
+              Опишите свои эмоции:
+            </h3>
             <textarea class="review__textarea" name="review" placeholder="Опишите подробно свои восторги"></textarea>
           </div>
         </fieldset>
 
         <div class="review__container">
-          <button class="review__button" type="submit">Отправить отзыв</button>
+          <button class="review__button" type="submit">
+            Отправить отзыв
+          </button>
           <span class="review__note">
             <sup>*</sup> - обязательные поля
           </span>
@@ -182,26 +198,39 @@
   <footer class="main-footer">
     <div class="main-footer__container">
       <section class="main-footer__tag">
-        <h2 class="visually-hidden">Хештег</h2>
-        <a class="main-footer__tag-link" href="#">#Visitsedona</a>
+        <h2 class="visually-hidden">
+          Хештег
+        </h2>
+        <a class="main-footer__tag-link" href="#">
+          #Visitsedona
+        </a>
       </section>
 
       <section class="main-footer__social social">
         <h2 class="visually-hidden">Наши соцсети</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link"  href="#">
-                <img src="./img/vk.svg" alt="Вконтакте">
+            <a class="social__link"  href="https://vk.com/htmlacademy">
+                <img src="./img/vk.svg" width="24" height="24" alt="Вконтакте">
+                <span class="visually-hidden">
+                  Вконтакте
+                </span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link"  href="#">
-                <img src="./img/telegram.svg" alt="Телеграм">
+            <a class="social__link"  href="tg://resolve?domain=htmlacademy/">
+                <img src="./img/telegram.svg" width="24" height="24" alt="Телеграм">
+                <span class="visually-hidden">
+                  Телеграм
+                </span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link"  href="#">
-              <img src="./img/youtube.svg" alt="Ютуб">
+            <a class="social__link"  href="https://www.youtube.com/user/htmlacademyru">
+              <img src="./img/youtube.svg" width="24" height="24" alt="Ютуб">
+              <span class="visually-hidden">
+                Ютуб
+              </span>
             </a>
           </li>
         </ul>
@@ -209,9 +238,10 @@
 
       <section class="main-footer__copyright copyright">
         <h2 class="visually-hidden">Разработчик</h2>
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="#">
-          <img class="image" src="./img/htmlacademy.svg" width="27" height="34" alt="Логотип автора">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__text">Разработано</p>
+          <img src="./img/htmlacademy.svg" width="27" height="34" alt="Логотип автора">
+          <span class="visually-hidden">Разработчик</span>
         </a>
       </section>
     </div>
