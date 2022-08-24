@@ -4,8 +4,18 @@
   background-color: @bg-white;
 }
 
+.review__form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .review__group {
+  box-sizing: border-box;
   position: relative;
+
+  width: 100%;
 
   margin: 0;
   padding: 0;
@@ -27,6 +37,16 @@
     content: "";
   }
 
+  &--info {
+    @media (min-width: @tablet-width) {
+      flex: 1 1 50%;
+    }
+  }
+
+  &--info:first-child {
+    border-right: 1px solid #dbdbdb;
+  }
+
   @media (min-width: @tablet-width) {
     &--border::before {
       display: none;
@@ -35,7 +55,7 @@
 }
 
 .review__container {
-  padding: 25px 20px 40px;
+  padding: 25px 20px 35px;
 
   @media (min-width: @tablet-width) {
     padding: 25px 60px 40px;
@@ -70,16 +90,53 @@
 .review__title {
   margin: 0;
 
+  font-size: 18px;
+  line-height: 26px;
+
   text-align: center;
   text-transform: uppercase;
 
+  &--border {
+    position: relative;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 21px;
+
+    &--border::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      height: 1px;
+      width: 30%;
+
+      background-color: #d6d6d6;
+
+      content: "";
+    }
+
+    &--border::after {
+      position: absolute;
+      top: 10px;
+      right: 0;
+
+      height: 1px;
+      width: 30%;
+
+      background-color: #d6d6d6;
+
+      content: "";
+    }
   }
 }
 
-.form__label {
+.review__label {
   text-transform: uppercase;
+
+  &--user {
+    margin-left: 15px;
+  }
 }
 
 .review__input {
@@ -96,7 +153,19 @@
   font-size: 18px;
   font-weight: 700;
 
-  background-color: @bg-grey;
+  outline: none;
+
+  background-color: @bg-input;
+
+  &:hover {
+    background-color: @bg-input-hover;
+  }
+
+  &:active {
+    border: 4px @bordet-input-active solid;
+
+    background-color: @bg-input-active;
+  }
 }
 
 // radio
@@ -107,6 +176,17 @@
 
   font-size: 18px;
   font-weight: 700;
+
+  text-transform: capitalize;
+
+
+  &:hover::before {
+    background-color: @bg-control-hover;
+  }
+
+  &:active::before {
+    background-color: @bg-control-active;
+  }
 }
 
 .review__radio-control::before {
@@ -157,6 +237,16 @@
 
   font-size: 18px;
   font-weight: 700;
+
+  text-transform: capitalize;
+
+  &:hover::before {
+    background-color: @bg-control-hover;
+  }
+
+  &:active::before {
+    background-color: @bg-control-active;
+  }
 }
 
 .review__checkbox-control::before {
@@ -168,7 +258,7 @@
   width: 46px;
   height: 46px;
 
-  background-color: @bg-dark-grey;
+  background-color: @bg-control;
 
   content: "";
 
@@ -217,13 +307,29 @@
 
   color: rgba(0, 0, 0, 0.3);
 
-  background-color: @bg-grey;
+  outline: none;
+
+  background-color: @bg-input;
+
+  &:hover {
+    background-color: @bg-input-hover;
+  }
+
+  &:active {
+    border: 4px @bordet-input-active solid;
+
+    background-color: @bg-input-active;
+  }
 }
 
 .review__button {
   .button();
 
   width: 100%;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
 
   @media (min-width: @tablet-width) {
     width: 50%;

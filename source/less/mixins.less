@@ -1,26 +1,36 @@
+.container() {
+  min-width: 320px;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
 .button() {
   box-sizing: border-box;
   display: inline-block;
 
-  padding: 20px 0;
-
-  font-size: 18px;
-  font-weight: 700;
-
+  padding: 16px 12px;
   border: 0;
 
   text-decoration: none;
   text-transform: uppercase;
 
   color: @bg-white;
-  background-color: @bg-blue;
-}
+  background-color: @bg-button;
 
-.container() {
-  min-width: 320px;
-  max-width: 1200px;
+  &:hover {
+    background-color: @bg-button-hover;
+  }
 
-  margin: 0 auto;
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: @bg-button-active;
+  }
+
+  &:disabled {
+    background-color: @bg-button-disabled;
+  }
 }
 
 .image() {

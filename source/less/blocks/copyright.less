@@ -1,8 +1,22 @@
-.copyright__text {
-  display: inline-block;
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
 
-  margin: 0;
-  margin-right: 13px;
+  text-decoration: none;
+}
+
+.copyright__text {
+  color: @text-copyright;
 
   text-transform: uppercase;
+
+  &:hover {
+    color: @text-copyright-hover;
+  }
+
+  &:active {
+    color: @text-copyright-active;
+  }
 }
