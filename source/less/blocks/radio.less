@@ -1,0 +1,65 @@
+.radio {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+
+  margin-top: 30px;
+}
+
+.radio__button {
+  position: relative;
+
+  padding-left: 65px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  &::before {
+    position: absolute;
+
+    left: 0;
+    top: -13px;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+
+    background-color: @bg-dark-grey;
+
+    content: "";
+
+    cursor: pointer;
+  }
+
+  &::after {
+    position: absolute;
+
+    top: 2px;
+    left: 16px;
+
+    width: 15px;
+    height: 15px;
+
+    background-image: url("../img/point.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    content: "";
+
+    display: none;
+  }
+
+
+  &:hover::before {
+    background-color: @bg-control-hover;
+  }
+
+  &:active::before {
+    background-color: @bg-control-active;
+  }
+}
+
+.radio__input:checked ~ .radio__button::after {
+  display: block;
+}

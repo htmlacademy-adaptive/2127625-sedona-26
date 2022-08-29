@@ -3,7 +3,7 @@
 
   text-align: left;
 
-  &--border::before {
+  &::before {
     position: absolute;
     top: 0;
     right: 0;
@@ -12,14 +12,14 @@
     min-width: 320px;
     height: 1px;
 
-    background-color: #d6d6d6;
+    background-color: @border-light;
 
     content: "";
   }
 
 
   @media (min-width: @tablet-width) {
-    &--border::before {
+    &::before {
       display: none;
     }
   }
@@ -39,7 +39,7 @@
   width: 100%;
   height: 280px;
 
-  background-color: #af9c4b;
+  background-color: @bg-image-card;
 
   @media (min-width: @tablet-width) {
     height: 267px;
