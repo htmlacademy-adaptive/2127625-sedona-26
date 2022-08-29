@@ -1,27 +1,81 @@
 .main-header {
-  text-transform: uppercase;
-}
+  .container();
 
-.main-header__container {
-  padding: 40px 25px;
+  text-align: center;
+  text-transform: uppercase;
+
   background-color: @bg-white;
 }
 
-.main-header__image {
-  height: 389px;
+.main-header__container {
+  position: relative;
+  box-sizing: border-box;
 
-  background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 30px 20px 35px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 700px;
+
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 35px;
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: -55px;
+      left: 0;
+
+      width: 100%;
+      height: 55px;
+
+      z-index: 400;
+
+      clip-path: polygon(0% 100%, 0% 0%, 50% 100%, 100% 0%, 100% 100%);
+
+      background-color: @bg-white;
+
+      content: "";
+    }
+  }
 }
 
-.main-header__subtitle {
-  font-size: 18px;
-  line-height: 1.5;
+.main-header__title {
   margin: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.main-header__title br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__text {
   margin: 0;
-  margin-top: 45px;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+  }
+}
+
+.main-header__text br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
