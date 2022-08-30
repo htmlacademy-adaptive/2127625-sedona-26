@@ -20,21 +20,19 @@
   width: 185px;
   height: 96px;
 
-  z-index: 3;
+  z-index: 2;
 }
 
 .page-header__image {
   position: relative;
 
-  height: 158px;
+  min-height: 158px;
 
   background-image: url("../img/back.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
   background-color: @bg-brown;
-
-  z-index: 2;
 
   @media (min-width: @tablet-width) {
     height: 290px;
@@ -49,29 +47,6 @@
 
     @media (min-width: @tablet-width) {
       height: 518px;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-    height: 26px;
-
-    clip-path: polygon(0% 100%, 0% 0%, 50% 100%, 100% 0%, 100% 100%);
-
-    background-color: @bg-white;
-
-    content: "";
-
-    @media (min-width: @tablet-width) {
-      height: 37px;
-    }
-
-    @media (min-width: @desktop-width) {
-      height: 57px;
     }
   }
 }
