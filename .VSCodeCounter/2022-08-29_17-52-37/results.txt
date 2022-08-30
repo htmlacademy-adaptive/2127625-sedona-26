@@ -1,0 +1,85 @@
+Date : 2022-08-29 17:52:37
+Directory : /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26
+Total : 49 files,  19256 codes, 26 comments, 536 blanks, all 19818 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          2 |     17,249 |          0 |          2 |     17,251 |
+| Less       |         24 |      1,049 |          1 |        401 |      1,451 |
+| HTML       |          3 |        714 |         15 |         58 |        787 |
+| XML        |         15 |        124 |          0 |         15 |        139 |
+| Markdown   |          3 |         66 |          0 |         49 |        115 |
+| JavaScript |          1 |         30 |         10 |          6 |         46 |
+| YAML       |          1 |         24 |          0 |          5 |         29 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                  | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                     |         49 |     19,256 |         26 |        536 |     19,818 |
+| .github                                                                                                               |          1 |         24 |          0 |          5 |         29 |
+| .github/workflows                                                                                                     |          1 |         24 |          0 |          5 |         29 |
+| source                                                                                                                |         43 |      1,895 |         16 |        479 |      2,390 |
+| source/img                                                                                                            |         15 |        124 |          0 |         15 |        139 |
+| source/less                                                                                                           |         25 |      1,057 |          1 |        406 |      1,464 |
+| source/less/blocks                                                                                                    |         19 |        937 |          1 |        374 |      1,312 |
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                              | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/.github/workflows/check.yml         | YAML       |         24 |          0 |          5 |         29 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/Contributing.md                     | Markdown   |         26 |          0 |         17 |         43 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/Readme.md                           | Markdown   |         32 |          0 |         27 |         59 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/gulpfile.js                         | JavaScript |         30 |         10 |          6 |         46 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/package-lock.json                   | JSON       |     17,206 |          0 |          1 |     17,207 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/package.json                        | JSON       |         43 |          0 |          1 |         44 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/catalog.html                 | HTML       |        201 |          4 |         14 |        219 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/form.html                    | HTML       |        254 |          6 |         24 |        284 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/eat.svg                  | XML        |          8 |          0 |          1 |          9 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/home.svg                 | XML        |         13 |          0 |          1 |         14 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/htmlacademy.svg          | XML        |          3 |          0 |          1 |          4 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/like-icon.svg            | XML        |          3 |          0 |          1 |          4 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/logo.svg                 | XML        |         33 |          0 |          1 |         34 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/mail.svg                 | XML        |          3 |          0 |          1 |          4 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/phone.svg                | XML        |          3 |          0 |          1 |          4 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/point.svg                | XML        |          3 |          0 |          1 |          4 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/sedona-big.svg           | XML        |         30 |          0 |          1 |         31 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/sedona-small.svg         | XML        |          3 |          0 |          1 |          4 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/souvenir.svg             | XML        |          3 |          0 |          1 |          4 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/telegram.svg             | XML        |          3 |          0 |          1 |          4 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/tick.svg                 | XML        |          3 |          0 |          1 |          4 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/vk.svg                   | XML        |         10 |          0 |          1 |         11 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/img/youtube.svg              | XML        |          3 |          0 |          1 |          4 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/index.html                   | HTML       |        259 |          5 |         20 |        284 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/README.md               | Markdown   |          8 |          0 |          5 |         13 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/card.less        | Less       |         88 |          0 |         35 |        123 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/catalog.less     | Less       |         37 |          0 |         11 |         48 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/checkbox.less    | Less       |         58 |          0 |         24 |         82 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/copyright.less   | Less       |         17 |          0 |          6 |         23 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/image.less       | Less       |          3 |          0 |          1 |          4 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/main-footer.less | Less       |         39 |          0 |         14 |         53 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/main-header.less | Less       |         60 |          0 |         22 |         82 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/map.less         | Less       |         11 |          0 |          4 |         15 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/modal.less       | Less       |         18 |          0 |          8 |         26 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/navigation.less  | Less       |         40 |          0 |         19 |         59 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/page-header.less | Less       |         66 |          0 |         28 |         94 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/page.less        | Less       |          8 |          0 |          2 |         10 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/radio.less       | Less       |         55 |          0 |         25 |         80 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/reasons.less     | Less       |        145 |          0 |         53 |        198 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/review.less      | Less       |        105 |          1 |         47 |        153 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/search.less      | Less       |         49 |          0 |         18 |         67 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/social.less      | Less       |         26 |          0 |         11 |         37 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/user-info.less   | Less       |         50 |          0 |         22 |         72 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/blocks/video.less       | Less       |         62 |          0 |         24 |         86 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/fonts.less              | Less       |         12 |          0 |          2 |         14 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/mixins.less             | Less       |         35 |          0 |         14 |         49 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/style.less              | Less       |         22 |          0 |          1 |         23 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/utils.less              | Less       |         12 |          0 |          1 |         13 |
+| /Users/artemmalafeev/programming/Designer Projects/HTML Academy/2127625-sedona-26/source/less/variables.less          | Less       |         31 |          0 |          9 |         40 |
+| Total                                                                                                                 |            |     19,256 |         26 |        536 |     19,818 |
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

@@ -4,6 +4,16 @@
   row-gap: 15px;
 }
 
+.user-info__label {
+  margin-left: 15px;
+
+  text-transform: uppercase;
+}
+
+.user-info__item {
+  position: relative;
+}
+
 .user-info__input {
   box-sizing: border-box;
   display: block;
@@ -11,24 +21,51 @@
   padding: 20px;
 
   width: 100%;
-  height: 56px;
+  height: 58px;
 
   border: 0;
 
-  font-size: 18px;
-  font-weight: 700;
+  font: bold 18px/26px PT Sans, sans-serif;
 
   outline: none;
 
   background-color: @bg-input;
 
+  &--icon {
+    padding-right: 76px;
+  }
+
   &:hover {
     background-color: @bg-input-hover;
   }
 
-  &:active {
+  &:focus {
     border: 4px @bordet-input-active solid;
 
     background-color: @bg-input-active;
   }
+}
+
+.user-info__icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  display: block;
+
+  height: 58px;
+  width: 58px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: @bg-dark-grey;
+
+  &--telephone {
+    background-image: url("../img/phone.svg");
+  }
+
+  &--email {
+    background-image: url("../img/mail.svg");
+  }
+
 }

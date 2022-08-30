@@ -57,7 +57,7 @@
       <h2 class="visually-hidden">Форма отзыва</h2>
       <form class="review__form" action="#" method="post">
         <!-- text -->
-        <fieldset class="review__group">
+        <fieldset class="review__group review__group--user-data">
           <div class="review__container">
             <h3 class="review__title">Представьтесь:</h3>
             <ul class="review__list user-info">
@@ -72,7 +72,7 @@
               </li>
 
               <li class="user-info__item">
-                <label class="user-info__labe" for="patronymic">Отчество:</label>
+                <label class="user-info__label" for="patronymic">Отчество:</label>
                 <input class="user-info__input" type="text" id="patronymic" name="patronymic" placeholder="Евгеньевич">
               </li>
             </ul>
@@ -80,20 +80,20 @@
         </fieldset>
 
         <!-- text -->
-        <fieldset class="review__group">
+        <fieldset class="review__group review__group--user-data">
           <div class="review__container">
             <h3 class="review__title">Контактная информация:</h3>
             <ul class="review__list user-info">
               <li class="user-info__item">
                 <label class="user-info__label" for="telephone">Контактный телефон<sup>*</sup>:</label>
-                <input class="user-info__input" id="telephone" type="tel" name="telephone" placeholder="Введите телефон">
-                <span class="user-info__logo user-info__logo--telephone"></span>
+                <input class="user-info__input user-info__input--icon" id="telephone" type="tel" name="telephone" maxlength="12" placeholder="Введите телефон">
+                <span class="user-info__icon user-info__icon--telephone"></span>
               </li>
 
               <li class="user-info__item">
                 <label class="user-info__label" for="email">Электронная почта<sup>*</sup>:</label>
-                <input class="user-info__input" id="email" type="email" name="email" placeholder="Введите e-mail">
-                <span class="user-info__logo review__logo--email"></span>
+                <input class="user-info__input user-info__input--icon" id="email" type="email" name="email" placeholder="Введите e-mail">
+                <span class="user-info__icon user-info__icon--email"></span>
               </li>
             </ul>
           </div>
@@ -183,7 +183,7 @@
           </div>
         </fieldset>
 
-        <div class="review__container">
+        <div class="review__submit">
           <button class="review__button" type="submit">
             Отправить отзыв
           </button>
@@ -249,16 +249,34 @@
   </footer>
 
   <div class="modal modal--error">
-    <h2 class="modal__header">Что-то пошло не так!</h2>
-    <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal__button--error" type="button">Ок</button>
+    <div class="modal__container">
+      <h2 class="modal__header">
+        Что-то пошло не так!
+      </h2>
+      <p class="modal__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="modal__button" type="button">
+        Ок
+      </button>
+    </div>
   </div>
 
   <div class="modal modal--success">
-    <h2 class="modal__header">Что-то пошло не так!</h2>
-    <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем на сайте.</p>
-    <div class="modal__bottom">
-      <button class="modal__button" type="button">Закрыть окно</button>
+    <div class="modal__container">
+      <div class="modal__top">
+        <h2 class="modal__header">
+          Что-то пошло не так!
+        </h2>
+        <p class="modal__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем на сайте.
+        </p>
+      </div>
+      <div class="modal__bottom">
+        <button class="modal__button" type="button">
+          Закрыть окно
+        </button>
+      </div>
     </div>
   </div>
 </body>

@@ -1,24 +1,38 @@
 .radio {
   display: flex;
-  flex-direction: column;
-  row-gap: 40px;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 30px;
 
   margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 35px;
+  }
+}
+
+.radio__item {
+  flex: 1 1 250px;
 }
 
 .radio__button {
-  position: relative;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
 
-  padding-left: 65px;
+  position: relative;
 
   font-size: 18px;
   font-weight: 700;
 
   &::before {
-    position: absolute;
+    position: relative;
+    align-self: flex-start;
 
+    flex-shrink: 0;
+
+    top: 0;
     left: 0;
-    top: -13px;
 
     width: 46px;
     height: 46px;
@@ -35,8 +49,8 @@
   &::after {
     position: absolute;
 
-    top: 2px;
-    left: 16px;
+    top: 15px;
+    left: 15px;
 
     width: 15px;
     height: 15px;
@@ -55,7 +69,7 @@
     background-color: @bg-control-hover;
   }
 
-  &:active::before {
+  &:focus::before {
     background-color: @bg-control-active;
   }
 }
