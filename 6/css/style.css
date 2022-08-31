@@ -329,6 +329,7 @@
   display: inline-block;
   padding: 16px 12px;
   border: 0;
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -438,6 +439,7 @@
   display: inline-block;
   padding: 16px 12px;
   border: 0;
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -565,10 +567,12 @@
   max-width: 768px;
   min-height: 150px;
   margin: 20px auto 0;
-  padding: 15px;
+  padding: 20px;
   border: 0;
   resize: none;
   outline: none;
+  cursor: pointer;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.3);
@@ -579,6 +583,7 @@
 }
 .review__textarea:focus {
   border: 4px #E5E5E5 solid;
+  padding: 16px;
   background-color: #FFFFFF;
 }
 .review__submit {
@@ -604,6 +609,7 @@
   display: inline-block;
   padding: 16px 12px;
   border: 0;
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -661,6 +667,7 @@
   border: 0;
   font: bold 18px/26px "PT Sans", sans-serif;
   outline: none;
+  cursor: pointer;
   background-color: #F2F2F2;
 }
 .user-info__input--icon {
@@ -671,6 +678,7 @@
 }
 .user-info__input:focus {
   border: 4px #E5E5E5 solid;
+  padding: 16px;
   background-color: #FFFFFF;
 }
 .user-info__icon {
@@ -790,10 +798,10 @@
 }
 .radio__button::after {
   position: absolute;
+  width: 16px;
+  height: 16px;
   top: 15px;
   left: 15px;
-  width: 15px;
-  height: 15px;
   background-image: url("../img/point.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1108,6 +1116,7 @@
   display: inline-block;
   padding: 16px 12px;
   border: 0;
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
