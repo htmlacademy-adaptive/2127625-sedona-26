@@ -19,7 +19,12 @@
 .page__body {
   margin: 0 auto;
 }
-.page-header {
+.page__header {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
   position: relative;
   min-width: 320px;
   max-width: 1200px;
@@ -27,7 +32,7 @@
   background-color: #FFFFFF;
   z-index: 1;
 }
-.page-header__link {
+.header__link {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,44 +42,68 @@
   height: 96px;
   z-index: 2;
 }
-.page-header__image {
+.header__image {
   position: relative;
-  min-height: 158px;
-  background-image: url("../img/back.jpg");
+  height: 389px;
+  background-image: url("../img/header/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-color: #FFA06B;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .header__image {
+    background-image: url("../img/header/back-mobile@2x.jpg");
+  }
+}
 @media (min-width: 768px) {
-  .page-header__image {
+  .header__image {
+    height: 518px;
+    background-image: url("../img/header/back-tablet.jpg");
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .header__image {
+    background-image: url("../img/header/back-tablet@2x.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .header__image {
+    background-image: url("../img/header/back-desktop.jpg");
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .header__image {
+    background-image: url("../img/header/back-desktop@2x.jpg");
+  }
+}
+.header__image--small {
+  height: 158px;
+  background-position: bottom;
+}
+@media (min-width: 768px) {
+  .header__image--small {
     height: 290px;
   }
 }
 @media (min-width: 1200px) {
-  .page-header__image {
+  .header__image--small {
     height: 300px;
   }
 }
-.page-header__image--main {
-  height: 389px;
-}
-@media (min-width: 768px) {
-  .page-header__image--main {
-    height: 518px;
-  }
-}
-.page-header__image img {
+.header__image img {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
+  width: 282px;
+  height: auto;
 }
 @media (min-width: 768px) {
-  .page-header__image img {
+  .header__image img {
     width: 460px;
-    height: auto;
   }
 }
 .reasons {
@@ -187,6 +216,7 @@
 }
 .reasons__image img {
   vertical-align: middle;
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -209,6 +239,7 @@
 }
 .reasons__logo img {
   vertical-align: middle;
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -860,7 +891,8 @@
   display: block;
   width: 100%;
   height: 280px;
-  background-color: @#AF9c4B;
+  background-color: #AF9c4B;
+  object-position: bottom;
 }
 @media (min-width: 768px) {
   .card__link {
@@ -872,11 +904,13 @@
     height: 400px;
   }
 }
-.card__image {
+.card__link img {
   vertical-align: middle;
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50%;
 }
 .card__footer {
   box-sizing: border-box;
@@ -1005,6 +1039,7 @@
 }
 .video__image img {
   vertical-align: middle;
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1154,7 +1189,6 @@
 }
 .navigation {
   position: relative;
-  max-height: 56px;
   background-color: #FFFFFF;
 }
 .navigation__toggle {
@@ -1271,6 +1305,7 @@
 }
 .map__image img {
   vertical-align: middle;
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
