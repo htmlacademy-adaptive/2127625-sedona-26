@@ -5,14 +5,13 @@
 }
 
 .review__form {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .review__group {
   box-sizing: border-box;
+
   position: relative;
 
   width: 100%;
@@ -23,33 +22,30 @@
 
   text-align: left;
 
-  &--border::before {
+  &::before {
     position: absolute;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
 
-    min-width: 320px;
     height: 1px;
 
-    background-color: #d6d6d6;
+    background-color: @border-light;
 
     content: "";
   }
 
-  &--info {
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
+    &::before {
+      display: none;
+    }
+
+    &--user-data {
       flex: 1 1 50%;
     }
-  }
 
-  &--info:first-child {
-    border-right: 1px solid #dbdbdb;
-  }
-
-  @media (min-width: @tablet-width) {
-    &--border::before {
-      display: none;
+    &--user-data:first-child {
+      border-right: 2px solid @border-light-grey;
     }
   }
 }
@@ -60,35 +56,25 @@
   @media (min-width: @tablet-width) {
     padding: 25px 60px 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 120px 40px;
+  }
 }
 
 .review__list {
   .list();
 
-  margin-top: 20px;
-
-  &--flex {
-    display: flex;
-    flex-direction: column;
-    row-gap: 25px;
-
-    margin-top: 25px;
-
-    @media (min-width: @tablet-width) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      column-gap: 50px;
-    }
-  }
-}
-
-.review__item {
   margin-top: 15px;
 }
 
 .review__title {
-  margin: 0;
+  position: relative;
+
+  max-width: 280px;
+  margin: 0 auto;
+
+  z-index: 1;
 
   font-size: 18px;
   line-height: 26px;
@@ -96,218 +82,68 @@
   text-align: center;
   text-transform: uppercase;
 
-  &--border {
-    position: relative;
-  }
+  background-color: @bg-white;
+}
+
+.review__line {
+  position: relative;
+
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
-    font-size: 21px;
-
-    &--border::before {
+    &::before {
       position: absolute;
       top: 50%;
       left: 0;
 
-      height: 1px;
-      width: 30%;
+      width: 25%;
+      height: 2px;
 
-      background-color: #d6d6d6;
+      background-color: @border-light-grey;
 
       content: "";
     }
 
-    &--border::after {
+    &::after {
       position: absolute;
-      top: 10px;
+      top: 50%;
       right: 0;
 
-      height: 1px;
-      width: 30%;
+      width: 25%;
+      height: 2px;
 
-      background-color: #d6d6d6;
+      background-color: @border-light-grey;
 
       content: "";
     }
   }
 }
 
-.review__label {
-  text-transform: uppercase;
-
-  &--user {
-    margin-left: 15px;
-  }
-}
-
-.review__input {
-  box-sizing: border-box;
-  display: block;
-
-  padding: 20px;
-
-  width: 100%;
-  height: 56px;
-
-  border: 0;
-
-  font-size: 18px;
-  font-weight: 700;
-
-  outline: none;
-
-  background-color: @bg-input;
-
-  &:hover {
-    background-color: @bg-input-hover;
-  }
-
-  &:active {
-    border: 4px @bordet-input-active solid;
-
-    background-color: @bg-input-active;
-  }
-}
-
-// radio
-.review__radio-control {
-  position: relative;
-
-  padding-left: 65px;
-
-  font-size: 18px;
-  font-weight: 700;
-
-  text-transform: capitalize;
-
-
-  &:hover::before {
-    background-color: @bg-control-hover;
-  }
-
-  &:active::before {
-    background-color: @bg-control-active;
-  }
-}
-
-.review__radio-control::before {
-  position: absolute;
-
-  left: 0;
-  top: -13px;
-
-  width: 46px;
-  height: 46px;
-
-  border-radius: 50%;
-
-  background-color: @bg-dark-grey;
-
-  content: "";
-
-  cursor: pointer;
-}
-
-.review__radio-control::after {
-  position: absolute;
-
-  top: 2px;
-  left: 16px;
-
-  width: 15px;
-  height: 15px;
-
-  background-image: url("../img/point.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  content: "";
-
-  display: none;
-}
-
-.review__radio:checked ~ .review__radio-control::after {
-  display: block;
-}
-
-// checkbox
-.review__checkbox-control {
-  position: relative;
-
-  padding-left: 65px;
-
-  font-size: 18px;
-  font-weight: 700;
-
-  text-transform: capitalize;
-
-  &:hover::before {
-    background-color: @bg-control-hover;
-  }
-
-  &:active::before {
-    background-color: @bg-control-active;
-  }
-}
-
-.review__checkbox-control::before {
-  position: absolute;
-
-  left: 0;
-  top: -13px;
-
-  width: 46px;
-  height: 46px;
-
-  background-color: @bg-control;
-
-  content: "";
-
-  cursor: pointer;
-}
-
-.review__checkbox-control::after {
-  position: absolute;
-
-  top: 2px;
-  left: 12px;
-
-  width: 22px;
-  height: 16px;
-
-  background-image: url("../img/tick.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  content: "";
-
-  display: none;
-}
-
-.review__checkbox:checked ~ .review__checkbox-control::after {
-  display: block;
-}
-
+// textarea
 .review__textarea {
   box-sizing: border-box;
 
   display: block;
 
   width: 100%;
+  max-width: 768px;
   min-height: 150px;
-  max-width: 775px;
 
   margin: 20px auto 0;
-  padding: 15px;
-  border: 0;
+  padding: 20px;
 
+  border: 0;
   resize: none;
+  outline: none;
+
+  cursor: pointer;
+
+  font-family: "PT Sans", sans-serif;
 
   font-size: 18px;
   font-weight: 700;
 
   color: rgba(0, 0, 0, 0.3);
-
-  outline: none;
 
   background-color: @bg-input;
 
@@ -315,33 +151,58 @@
     background-color: @bg-input-hover;
   }
 
-  &:active {
+  &:focus {
     border: 4px @bordet-input-active solid;
 
+    padding: 16px;
+
     background-color: @bg-input-active;
+  }
+}
+
+.review__submit {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 768px;
+
+  margin: 20px auto 10px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 10px;
+    margin-bottom: 60px;
+    padding: 0 60px;
   }
 }
 
 .review__button {
   .button();
 
-  width: 100%;
+  @media (min-width: @tablet-width) {
+    flex: 1 1 50%;
+  }
 
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-
-  @media (min-width: @tablet-width) {
-    width: 50%;
-    max-width: 384px;
-  }
 }
 
 .review__note {
   display: block;
 
   text-align: right;
-
   font-size: 12px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    flex: 1 1 50%;
+
+    font-size: 14px;
+  }
 }

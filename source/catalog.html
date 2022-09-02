@@ -7,23 +7,22 @@
   <link href="./css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
-  <header class="page-header">
+  <header class="page__header header">
     <h1 class="visually-hidden">Преимущества Седоны</h1>
-
-    <a class="page-header__link"  href="./index.html">
-        <img src="./img/logo.svg" alt="Логотип города Седона">
+    <a class="header__link"  href="./index.html">
+        <img src="./img/logo.svg" width="185" height="96" alt="Логотип города Седона">
     </a>
 
     <nav class="page-header__navigation navigation">
-      <button class="navigation__toggle" type="button">
+      <button class="navigation__toggle navigation__toggle--active" type="button">
         <span class="visually-hidden">Меню</span>
       </button>
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--active">Главная</a>
+          <a class="navigation__link" href="./index.html">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="./catalog.html">Фото и видео</a>
+          <a class="navigation__link navigation__link--active">Фото и видео</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="./form.html">Форма отзыва</a>
@@ -34,8 +33,8 @@
       </ul>
     </nav>
 
-    <div class="page-header__image">
-      <img src="./img/sedona-small.svg" width="229" height="39" alt="Изображение">
+    <div class="header__image header__image--small">
+      <img src="./img/header/slogan-small.svg" width="229" height="39" alt="sedona">
     </div>
 
   </header>
@@ -59,10 +58,14 @@
       <div class="catalog__container">
         <h2 class="visually-hidden">Фото</h2>
         <ul class="catalog__list">
-          <li class="catalog__item catalog__item--top card card--border">
+          <li class="catalog__item catalog__item--top card">
             <div class="card__container">
               <a class="card__link card__link--top" href="#">
-                <img class="card__image" src="./img/photo-1.jpg" alt="Неродные просторы">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/cards/photo-1-desktop.jpg 1x, img/cards/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/cards/photo-1-tablet.jpg 1x, img/cards/photo-1-tablet@2x.jpg 2x">
+                  <img src="img/cards/photo-1-mobile.jpg" srcset="img/cards/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+                </picture>
               </a>
               <div class="card__footer">
                 <div class="card__desctiption">
@@ -72,7 +75,7 @@
                   </p>
                 </div>
                 <div class="card__reaction">
-                  <a class="card__button" href="#" type="submit">
+                  <a class="card__button" href="#">
                     <img src="./img/like-icon.svg" width="23" height="21" alt="Изображение лайка">
                   </a>
                   <p class="card__likes">1350</p>
@@ -81,10 +84,14 @@
             </div>
           </li>
 
-          <li class="catalog__item card card--border">
+          <li class="catalog__item card">
             <div class="card__container">
               <a class="card__link" href="#">
-                <img class="card__image" src="./img/photo-2.jpg" alt="Местная растительность">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/cards/photo-2-desktop.jpg 1x, img/cards/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/cards/photo-2-tablet.jpg 1x, img/cards/photo-2-tablet@2x.jpg 2x">
+                  <img src="img/cards/photo-2-mobile.jpg" srcset="img/cards/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+                </picture>
               </a>
               <div class="card__footer">
                 <div class="card__desctiption">
@@ -94,7 +101,7 @@
                   </p>
                 </div>
                 <div class="card__reaction">
-                  <a class="card__button" href="#" type="submit">
+                  <a class="card__button" href="#">
                     <img src="./img/like-icon.svg" width="23" height="21" alt="Изображение лайка">
                   </a>
                   <p class="card__likes">143</p>
@@ -103,10 +110,14 @@
             </div>
           </li>
 
-          <li class="catalog__item card card--border">
+          <li class="catalog__item card">
             <div class="card__container">
               <a class="card__link" href="#">
-                <img class="card__image" src="./img/photo-3.jpg" alt="Дорога на север">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/cards/photo-3-desktop.jpg 1x, img/cards/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/cards/photo-3-tablet.jpg 1x, img/cards/photo-3-tablet@2x.jpg 2x">
+                  <img src="img/cards/photo-3-mobile.jpg" srcset="img/cards/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+                </picture>
               </a>
               <div class="card__footer">
                 <div class="card__desctiption">
@@ -116,7 +127,7 @@
                   </p>
                 </div>
                 <div class="card__reaction">
-                  <a class="card__button" href="#" type="submit">
+                  <a class="card__button" href="#">
                     <img src="./img/like-icon.svg" width="23" height="21" alt="Изображение лайка">
                   </a>
                   <p class="card__likes">96</p>
@@ -125,10 +136,14 @@
             </div>
           </li>
 
-          <li class="catalog__item card card--border">
+          <li class="catalog__item card">
             <div class="card__container">
               <a class="card__link" href="#">
-                <img class="card__image" src="./img/photo-4.jpg" alt="Мост дьявола">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/cards/photo-4-desktop.jpg 1x, img/cards/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/cards/photo-4-tablet.jpg 1x, img/cards/photo-4-tablet@2x.jpg 2x">
+                  <img src="img/cards/photo-4-mobile.jpg" srcset="img/cards/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+                </picture>
               </a>
               <div class="card__footer card__footer--desktop">
                 <div class="card__desctiption">
@@ -138,7 +153,7 @@
                   </p>
                 </div>
                 <div class="card__reaction">
-                  <a class="card__button" href="#" type="submit">
+                  <a class="card__button" href="#">
                     <img src="./img/like-icon.svg" width="23" height="21" alt="Изображение лайка">
                   </a>
                   <p class="card__likes">254</p>
@@ -151,7 +166,7 @@
     </section>
 
     <!-- блок video -->
-    <section class="video video--border">
+    <section class="video">
       <div class="video__container">
         <h2 class="video__title">Все еще сомневаетесь ?</h2>
         <p class="video__description">Смотрите видеопрезентации и скорее за билетами, пока они не подорожали в очередной раз!</p>

@@ -7,26 +7,25 @@
   <link href="./css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
-  <header class="page-header">
+  <header class="page__header header">
     <h1 class="visually-hidden">Преимущества Седоны</h1>
-
-    <a class="page-header__link"  href="./index.html">
-        <img src="./img/logo.png" alt="Логотип города Седона">
+    <a class="header__link"  href="./index.html">
+        <img src="./img/logo.svg" width="185" height="96" alt="Логотип города Седона">
     </a>
 
     <nav class="page-header__navigation navigation">
-      <button class="navigation__toggle" type="button">
+      <button class="navigation__toggle navigation__toggle--active" type="button">
         <span class="visually-hidden">Меню</span>
       </button>
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--active">Главная</a>
+          <a class="navigation__link" href="./index.html">Главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="./catalog.html">Фото и видео</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="./form.html">Форма отзыва</a>
+          <a class="navigation__link navigation__link--active">Форма отзыва</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
@@ -34,8 +33,8 @@
       </ul>
     </nav>
 
-    <div class="page-header__image">
-      <img src="./img/sedona-small.svg" width="229" height="39" alt="Изображение">
+    <div class="header__image header__image--small">
+      <img src="./img/header/slogan-small.svg" width="229" height="39" alt="sedona">
     </div>
   </header>
 
@@ -56,70 +55,76 @@
     <section class="review">
       <h2 class="visually-hidden">Форма отзыва</h2>
       <form class="review__form" action="#" method="post">
-        <fieldset class="review__group review__group--info review__group--border">
+        <!-- text -->
+        <fieldset class="review__group review__group--user-data">
           <div class="review__container">
             <h3 class="review__title">Представьтесь:</h3>
-            <ul class="review__list">
-              <li class="review__item">
-                <label class="review__label review__label--user" for="name">Имя<sup>*</sup>:</label>
-                <input class="review__input" type="text" id="name" name="name" placeholder="Артем">
+            <ul class="review__list user-info">
+              <li class="user-info__item">
+                <label class="user-info__label" for="name">Имя<sup>*</sup>:</label>
+                <input class="user-info__input" type="text" id="name" name="name" placeholder="Артем">
               </li>
 
-              <li class="review__item">
-                <label class="review__label review__label--user" for="surname">Фамилия<sup>*</sup>:</label>
-                <input class="review__input" type="text" id="surname" name="surname" placeholder="Малафеев">
+              <li class="user-info__item">
+                <label class="user-info__label" for="surname">Фамилия<sup>*</sup>:</label>
+                <input class="user-info__input" type="text" id="surname" name="surname" placeholder="Малафеев">
               </li>
 
-              <li class="review__item">
-                <label class="review__label review__label--user" for="patronymic">Отчество:</label>
-                <input class="review__input" type="text" id="patronymic" name="patronymic" placeholder="Евгеньевич">
+              <li class="user-info__item">
+                <label class="user-info__label" for="patronymic">Отчество:</label>
+                <input class="user-info__input" type="text" id="patronymic" name="patronymic" placeholder="Евгеньевич">
               </li>
             </ul>
           </div>
         </fieldset>
 
-        <fieldset class="review__group review__group--info review__group--border">
+        <!-- text -->
+        <fieldset class="review__group review__group--user-data">
           <div class="review__container">
             <h3 class="review__title">Контактная информация:</h3>
-            <ul class="review__list">
-              <li class="review__item">
-                <label class="review__label review__label--user" for="telephone">Контактный телефон<sup>*</sup>:</label>
-                <input class="review__input" id="telephone" type="tel" name="telephone" placeholder="Введите телефон">
-                <span class="review__logo review__logo--telephone"></span>
+            <ul class="review__list user-info">
+              <li class="user-info__item">
+                <label class="user-info__label" for="telephone">Контактный телефон<sup>*</sup>:</label>
+                <input class="user-info__input user-info__input--icon" id="telephone" type="tel" name="telephone" maxlength="12" placeholder="Введите телефон">
+                <span class="user-info__icon user-info__icon--telephone"></span>
               </li>
 
-              <li class="review__item">
-                <label class="review__label review__label--user" for="email">Электронная почта<sup>*</sup>:</label>
-                <input class="review__input" id="email" type="email" name="email" placeholder="Введите e-mail">
-                <span class="review__logo review__logo--email"></span>
+              <li class="user-info__item">
+                <label class="user-info__label" for="email">Электронная почта<sup>*</sup>:</label>
+                <input class="user-info__input user-info__input--icon" id="email" type="email" name="email" placeholder="Введите e-mail">
+                <span class="user-info__icon user-info__icon--email"></span>
               </li>
             </ul>
           </div>
         </fieldset>
 
         <!-- radio -->
-        <fieldset class="review__group review__group--border">
+        <fieldset class="review__group">
           <div class="review__container">
-            <h3 class="review__title review__title--border">Ваше общее впечатление:</h3>
-            <ul class="review__list review__list--flex">
-              <li class="review__item">
-                <label class="review__label">
-                  <input class="review__radio visually-hidden" type="radio" name="mark" value="good">
-                  <span class="review__radio-control">Скорее положительное</span>
+            <div class="review__line">
+              <h3 class="review__title">
+                Ваше общее впечатление:
+              </h3>
+            </div>
+            <ul class="review__list radio">
+              <li class="radio__item">
+                <label class="radio__label">
+                  <input class="radio__input visually-hidden" type="radio" name="mark" value="good" checked="checked">
+                  <span class="radio__button">Скорее положительное</span>
                 </label>
               </li>
 
-              <li class="review__item">
-                <label class="review__label">
-                  <input class="review__radio visually-hidden" type="radio" name="mark" value="bad">
-                  <span class="review__radio-control">Скорее отрицательное</span>
+              <li class="radio__item">
+                <label class="radio__label">
+                  <input class="radio__input visually-hidden" type="radio" name="mark" value="good">
+                  <span class="radio__button">Скорее отрицательное</span>
                 </label>
               </li>
 
-              <li class="review__item">
-                <label class="review__label">
-                  <input class="review__radio visually-hidden" type="radio" name="mark" value="no-mark">
-                  <span class="review__radio-control">Затрудняюсь ответить</span>
+              <li class="radio__item">
+                <label class="radio__label">
+                  <input class="radio__input visually-hidden" type="radio" name="mark" value="good">
+                  <span class="radio__button">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
@@ -127,61 +132,65 @@
         </fieldset>
 
         <!-- checkbox -->
-        <fieldset class="review__group review__group--border">
+        <fieldset class="review__group">
           <div class="review__container">
-            <h3 class="review__title review__title--border">
-              Посещенные достопримечательности:
-            </h3>
-            <ul class="review__list review__list--flex">
-              <li class="review__item">
-                <label class="review__label">
-                  <input class="review__checkbox visually-hidden" name="attractions" value="bridge" type="checkbox">
-                  <span class="review__checkbox-control">
+            <div class="review__line">
+              <h3 class="review__title">
+                Посещенные достопримечательности:
+              </h3>
+            </div>
+            <ul class="review__list checkbox">
+              <li class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__input visually-hidden" name="attractions" value="bridge" type="checkbox">
+                  <span class="checkbox__button">
                     Мост Дьявола
                   </span>
                 </label>
               </li>
 
-              <li class="review__item">
-                <label class="review__label">
-                  <input class="review__checkbox visually-hidden" name="attractions" value="mountain" type="checkbox">
-                  <span class="review__checkbox-control">
+              <li class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__input visually-hidden" name="attractions" value="bridge" type="checkbox" checked="checked">
+                  <span class="checkbox__button">
                     Гора-Колокол
                   </span>
                 </label>
               </li>
 
-              <li class="review__item">
-                <label class="review__label">
-                  <input class="review__checkbox visually-hidden" name="attractions" value="park" type="checkbox">
-                  <span class="review__checkbox-control">
+              <li class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__input visually-hidden" name="attractions" value="bridge" type="checkbox">
+                  <span class="checkbox__button">
                     Слайд-парк
                   </span>
                 </label>
               </li>
 
-              <li class="review__item">
-                <label class="review__label">
-                  <input class="review__checkbox visually-hidden" name="attractions" value="rocks" type="checkbox">
-                  <span class="review__checkbox-control">
+              <li class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__input visually-hidden" name="attractions" value="bridge" type="checkbox" checked="checked">
+                  <span class="checkbox__button">
                     Красные скалы
                   </span>
                 </label>
-            </li>
+              </li>
             </ul>
           </div>
         </fieldset>
 
-        <fieldset class="review__group review__group--border">
+        <fieldset class="review__group">
           <div class="review__container">
-            <h3 class="review__title review__title--border">
-              Опишите свои эмоции:
-            </h3>
+            <div class="review__line">
+              <h3 class="review__title">
+                Опишите свои эмоции:
+              </h3>
+            </div>
             <textarea class="review__textarea" name="review" placeholder="Опишите подробно свои восторги"></textarea>
           </div>
         </fieldset>
 
-        <div class="review__container">
+        <div class="review__submit">
           <button class="review__button" type="submit">
             Отправить отзыв
           </button>
@@ -246,17 +255,42 @@
     </div>
   </footer>
 
+  <!-- modal -->
   <div class="modal modal--error">
-    <h2 class="modal__header">Что-то пошло не так!</h2>
-    <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal__button--error" type="button">Ок</button>
+    <div class="modal__container">
+      <div class="modal__top">
+        <h2 class="modal__title">
+          Что-то пошло не так!
+        </h2>
+        <p class="modal__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+      </div>
+
+      <div class="modal__bottom">
+        <button class="modal__button" type="button">
+          Ок
+        </button>
+      </div>
+    </div>
   </div>
 
   <div class="modal modal--success">
-    <h2 class="modal__header">Что-то пошло не так!</h2>
-    <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем на сайте.</p>
-    <div class="modal__bottom">
-      <button class="modal__button" type="button">Закрыть окно</button>
+    <div class="modal__container modal__container--success">
+      <div class="modal__top modal__top--success">
+        <h2 class="modal__title">
+          Ваш отзыв отправлен!
+        </h2>
+        <p class="modal__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем на сайте.
+        </p>
+      </div>
+
+      <div class="modal__bottom modal__bottom--success">
+        <button class="modal__button" type="button">
+          Закрыть окно
+        </button>
+      </div>
     </div>
   </div>
 </body>

@@ -1,0 +1,79 @@
+.radio {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 30px;
+
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 35px;
+  }
+}
+
+.radio__item {
+  flex: 1 1 250px;
+}
+
+.radio__button {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+
+  position: relative;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  &::before {
+    position: relative;
+    align-self: flex-start;
+
+    flex-shrink: 0;
+
+    top: 0;
+    left: 0;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+
+    background-color: @bg-dark-grey;
+
+    content: "";
+
+    cursor: pointer;
+  }
+
+  &::after {
+    position: absolute;
+
+    width: 16px;
+    height: 16px;
+
+    top: 15px;
+    left: 15px;
+
+    background-image: url("../img/point.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    content: "";
+
+    display: none;
+  }
+
+
+  &:hover::before {
+    background-color: @bg-control-hover;
+  }
+
+  &:focus::before {
+    background-color: @bg-control-active;
+  }
+}
+
+.radio__input:checked ~ .radio__button::after {
+  display: block;
+}
