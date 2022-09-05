@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <base href="https://htmlacademy-adaptive.github.io/2127625-sedona-26/8/">
+</head>
+<body class="page__body">
+  <header class="page__header header">
+    <h1 class="visually-hidden">Преимущества Седоны</h1>
+    <a class="header__link"  href="./index.html">
+        <img src="./img/logo.svg" width="185" height="96" alt="Логотип города Седона">
+    </a>
+
+    <nav class="page-header__navigation navigation">
+      <button class="navigation__toggle navigation__toggle--active" type="button">
+        <span class="visually-hidden">Меню</span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="./index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--active">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="./form.html">Форма отзыва</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__image header__image--small">
+      <img src="./img/header/slogan-small.svg" width="229" height="39" alt="sedona">
+    </div>
+
+  </header>
+
+  <main class="main-container">
+    <!-- блок main-header -->
+    <header class="main-header">
+      <div class="main-header__container">
+        <h2 class="main-header__title">
+          Фото и видео
+        </h2>
+        <p class="main-header__text">
+          Не можете решиться на путешествие из-за курса?<br>
+          Фотографии помогут вам забыть о политике и экономике.
+        </p>
+      </div>
+    </header>
+
+    <!-- блок catalog -->
+    <section class="catalog">
+      <div class="catalog__container">
+        <h2 class="visually-hidden">Фото</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog__item--top card">
+            <div class="card__container">
+              <a class="card__link card__link--top" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/cards/webp/photo-1-desktop.webp 1x, img/cards/webp/photo-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/webp/photo-1-tablet.webp 1x, img/cards/webp/photo-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cards/webp/photo-1-mobile.webp 1x, img/cards/webp/photo-1-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/cards/photo-1-desktop.jpg 1x, img/cards/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/cards/photo-1-tablet.jpg 1x, img/cards/photo-1-tablet@2x.jpg 2x">
+                  <img src="img/cards/photo-1-mobile.jpg" srcset="img/cards/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+                </picture>
+              </a>
+              <div class="card__footer">
+                <div class="card__desctiption">
+                  <h3 class="card__title">Неродные просторы</h3>
+                  <p class="card__author">
+                    Автор фото: Борис
+                  </p>
+                </div>
+                <div class="card__reaction">
+                  <a class="card__button" href="#">
+                    <svg width="23" height="21">
+                      <use xlink:href="img/icons.svg#icon-like"/>
+                    </svg>
+                  </a>
+                  <p class="card__likes">1350</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="catalog__item card">
+            <div class="card__container">
+              <a class="card__link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/cards/photo-2-desktop.jpg 1x, img/cards/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/cards/photo-2-tablet.jpg 1x, img/cards/photo-2-tablet@2x.jpg 2x">
+                  <img src="img/cards/photo-2-mobile.jpg" srcset="img/cards/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+                </picture>
+              </a>
+              <div class="card__footer">
+                <div class="card__desctiption">
+                  <h3 class="card__title">Местная растительность</h3>
+                  <p class="card__author">
+                    Автор фото: Сергей
+                  </p>
+                </div>
+                <div class="card__reaction">
+                  <a class="card__button" href="#">
+                    <svg width="23" height="21">
+                      <use xlink:href="img/icons.svg#icon-like"/>
+                    </svg>
+                  </a>
+                  <p class="card__likes">143</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="catalog__item card">
+            <div class="card__container">
+              <a class="card__link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/cards/photo-3-desktop.jpg 1x, img/cards/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/cards/photo-3-tablet.jpg 1x, img/cards/photo-3-tablet@2x.jpg 2x">
+                  <img src="img/cards/photo-3-mobile.jpg" srcset="img/cards/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+                </picture>
+              </a>
+              <div class="card__footer">
+                <div class="card__desctiption">
+                  <h3 class="card__title">Дорога на север</h3>
+                  <p class="card__author">
+                    Автор фото: Петр
+                  </p>
+                </div>
+                <div class="card__reaction">
+                  <a class="card__button" href="#">
+                    <svg width="23" height="21">
+                      <use xlink:href="img/icons.svg#icon-like"/>
+                    </svg>
+                  </a>
+                  <p class="card__likes">96</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="catalog__item card">
+            <div class="card__container">
+              <a class="card__link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/cards/photo-4-desktop.jpg 1x, img/cards/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/cards/photo-4-tablet.jpg 1x, img/cards/photo-4-tablet@2x.jpg 2x">
+                  <img src="img/cards/photo-4-mobile.jpg" srcset="img/cards/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+                </picture>
+              </a>
+              <div class="card__footer card__footer--desktop">
+                <div class="card__desctiption">
+                  <h3 class="card__title">Мост дьявола</h3>
+                  <p class="card__author">
+                    Автор фото: Антон
+                  </p>
+                </div>
+                <div class="card__reaction">
+                  <a class="card__button" href="#">
+                    <svg width="23" height="21">
+                      <use xlink:href="img/icons.svg#icon-like"/>
+                    </svg>
+                  </a>
+                  <p class="card__likes">254</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- блок video -->
+    <section class="video">
+      <div class="video__container">
+        <h2 class="video__title">Все еще сомневаетесь ?</h2>
+        <p class="video__description">Смотрите видеопрезентации и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="video__image">
+          <img src="./img/video.jpg" alt="Превью видео">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- блок main-footer -->
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <section class="main-footer__tag">
+        <h2 class="visually-hidden">
+          Хештег
+        </h2>
+        <a class="main-footer__tag-link" href="#">
+          #Visitsedona
+        </a>
+      </section>
+
+      <section class="main-footer__social social">
+        <h2 class="visually-hidden">Наши соцсети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link"  href="https://vk.com/htmlacademy">
+              <svg width="24" height="14">
+                <use xlink:href="img/icons.svg#icon-vk"/>
+              </svg>
+              <span class="visually-hidden">
+                Вконтакте
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link"  href="tg://resolve?domain=htmlacademy/">
+              <svg width="21" height="18">
+                <use xlink:href="img/icons.svg#icon-telegram"/>
+              </svg>
+              <span class="visually-hidden">
+                Телеграм
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link"  href="https://www.youtube.com/user/htmlacademyru">
+              <svg width="20" height="14">
+                <use xlink:href="img/icons.svg#icon-youtube"/>
+              </svg>
+              <span class="visually-hidden">
+                Ютуб
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-footer__copyright copyright">
+        <h2 class="visually-hidden">Разработчик</h2>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <svg width="24" height="29">
+            <use xlink:href="img/icons.svg#icon-html"/>
+          </svg>
+          <span class="visually-hidden">Разработчик</span>
+        </a>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
