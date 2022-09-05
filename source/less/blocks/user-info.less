@@ -41,6 +41,10 @@
     background-color: @bg-input-hover;
   }
 
+  &:hover::placeholder {
+    color: @text-black;
+  }
+
   &:focus {
     border: 4px @bordet-input-active solid;
     padding: 16px;
@@ -59,15 +63,18 @@
   height: 58px;
   width: 58px;
 
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: @bg-dark-grey;
+}
 
-  &--telephone {
-    background-image: url("../img/phone.svg");
-  }
+.user-info__icon svg {
+  position: absolute;
 
-  &--email {
-    background-image: url("../img/mail.svg");
-  }
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  margin: auto;
+
+  fill: @icon-black;
 }

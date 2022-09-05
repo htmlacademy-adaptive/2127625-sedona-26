@@ -14,7 +14,7 @@
     <header class="page__header header">
       <h1 class="visually-hidden">Преимущества Седоны</h1>
       <a class="header__link"  href="./index.html">
-        <img src="./img/logo.svg" width="185" height="96" alt="Логотип города Седона">
+        <img src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
       </a>
 
       <nav class="page-header__navigation navigation">
@@ -38,7 +38,7 @@
       </nav>
 
       <div class="header__image">
-        <img src="./img/header/slogan.svg" width="282" height="214" alt="sedona">
+        <img src="img/header/slogan.svg" width="282" height="214" alt="sedona">
       </div>
     </header>
 
@@ -79,7 +79,7 @@
             </div>
 
             <div class="reasons__image">
-              <img src="./img/photo-city.jpg" alt="Седона">
+              <img src="img/photo-city.jpg" alt="Седона">
             </div>
           </li>
 
@@ -87,7 +87,9 @@
             <div class="reasons__info">
               <div class="reasons__container reasons__container--advice">
                 <div class="reasons__logo">
-                  <img src="./img/home.svg" alt="Логотип жилья">
+                  <svg width="40" height="40">
+                    <use xlink:href="img/icons.svg#icon-house"/>
+                  </svg>
                 </div>
                 <h3 class="reasons__title">
                   Жилье
@@ -103,7 +105,9 @@
             <div class="reasons__info">
               <div class="reasons__container reasons__container--advice">
                 <div class="reasons__logo">
-                  <img src="./img/eat.svg" alt="Логотип еды">
+                  <svg width="40" height="40">
+                    <use xlink:href="img/icons.svg#icon-burger"/>
+                  </svg>
                 </div>
                 <h3 class="reasons__title">
                   Еда
@@ -119,7 +123,9 @@
             <div class="reasons__info">
               <div class="reasons__container reasons__container--advice">
                 <div class="reasons__logo">
-                  <img src="./img/souvenir.svg" alt="Логотип сувенира">
+                  <svg width="40" height="40">
+                    <use xlink:href="img/icons.svg#icon-present"/>
+                  </svg>
                 </div>
                 <h3 class="reasons__title">
                   Сувениры
@@ -252,23 +258,29 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link"  href="https://vk.com/htmlacademy">
-                  <img src="./img/vk.svg" width="24" height="24" alt="Вконтакте">
-                  <span class="visually-hidden">
-                    Вконтакте
-                  </span>
+                <svg width="24" height="14">
+                  <use xlink:href="img/icons.svg#icon-vk"/>
+                </svg>
+                <span class="visually-hidden">
+                  Вконтакте
+                </span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link"  href="tg://resolve?domain=htmlacademy/">
-                  <img src="./img/telegram.svg" width="24" height="24" alt="Телеграм">
-                  <span class="visually-hidden">
-                    Телеграм
-                  </span>
+                <svg width="21" height="18">
+                  <use xlink:href="img/icons.svg#icon-telegram"/>
+                </svg>
+                <span class="visually-hidden">
+                  Телеграм
+                </span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link"  href="https://www.youtube.com/user/htmlacademyru">
-                <img src="./img/youtube.svg" width="24" height="24" alt="Ютуб">
+                <svg width="20" height="14">
+                  <use xlink:href="img/icons.svg#icon-youtube"/>
+                </svg>
                 <span class="visually-hidden">
                   Ютуб
                 </span>
@@ -280,8 +292,10 @@
         <section class="main-footer__copyright copyright">
           <h2 class="visually-hidden">Разработчик</h2>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="copyright__text">Разработано</p>
-            <img src="./img/htmlacademy.svg" width="27" height="34" alt="Логотип автора">
+            Разработано
+            <svg width="24" height="29">
+              <use xlink:href="img/icons.svg#icon-html"/>
+            </svg>
             <span class="visually-hidden">Разработчик</span>
           </a>
         </section>
