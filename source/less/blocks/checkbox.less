@@ -36,6 +36,7 @@
   &::before {
     position: relative;
     align-self: flex-start;
+
     flex-shrink: 0;
 
     left: 0;
@@ -71,8 +72,13 @@
     background-color: @bg-control-hover;
   }
 
-  &:focus::before {
+  &:active::before {
     background-color: @bg-control-active;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+    display: block;
   }
 }
 
