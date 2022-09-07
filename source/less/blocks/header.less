@@ -5,8 +5,6 @@
   margin: 0 auto;
 
   background-color: @bg-white;
-
-  z-index: 1;
 }
 
 .header__link {
@@ -34,6 +32,8 @@
   background-size: cover;
 
   background-color: @bg-brown;
+
+  overflow: hidden;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/header/back-mobile@2x.jpg");
@@ -87,4 +87,13 @@
   @media (min-width: @tablet-width) {
     width: 460px;
   }
+}
+
+.header__image svg {
+  position: absolute;
+  left: -200%;
+  right: -200%;
+  bottom: 0;
+
+  margin: auto;
 }
