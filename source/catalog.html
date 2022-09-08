@@ -4,40 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="page__header header">
-    <h1 class="visually-hidden">Преимущества Седоны</h1>
-    <a class="header__link"  href="./index.html">
-        <img src="./img/logo.svg" width="185" height="96" alt="Логотип города Седона">
+    <h1 class="visually-hidden">
+      Преимущества Седоны
+    </h1>
+    <a class="header__link"  href="index.html">
+        <img src="img/header/logo.svg" width="185" height="96" alt="Логотип города Седона">
     </a>
 
     <nav class="page-header__navigation navigation navigation--closed">
       <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Меню</span>
+        <span class="visually-hidden">
+          Меню
+        </span>
       </button>
 
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link" href="./index.html">Главная</a>
+          <a class="navigation__link" href="index.html">
+            Главная
+          </a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--active">Фото и видео</a>
+          <a class="navigation__link navigation__link--active">
+            Фото и видео
+          </a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="./form.html">Форма отзыва</a>
+          <a class="navigation__link" href="form.html">
+            Форма отзыва
+          </a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          <a class="navigation__link" href="https://htmlacademy.ru/">
+            HTML Academy
+          </a>
         </li>
       </ul>
     </nav>
 
     <div class="header__image header__image--small">
-      <img src="./img/header/slogan-small.svg" width="229" height="39" alt="sedona">
+      <img src="img/header/slogan-small.svg" width="229" height="39" alt="Добро пожаловать">
       <svg width="1200" height="57">
-        <use xlink:href="img/icons.svg#header-decorate"/>
+        <use xlink:href="img/sprite.svg#decorate"/>
       </svg>
     </div>
 
@@ -60,7 +72,9 @@
     <!-- блок catalog -->
     <section class="catalog">
       <div class="catalog__container">
-        <h2 class="visually-hidden">Фото</h2>
+        <h2 class="visually-hidden">
+          Фото
+        </h2>
         <ul class="catalog__list">
           <li class="catalog__item catalog__item--top card">
             <div class="card__container">
@@ -76,7 +90,9 @@
               </a>
               <div class="card__footer">
                 <div class="card__desctiption">
-                  <h3 class="card__title">Неродные просторы</h3>
+                  <h3 class="card__title">
+                    Неродные просторы
+                  </h3>
                   <p class="card__author">
                     Автор фото: Борис
                   </p>
@@ -84,10 +100,12 @@
                 <div class="card__reaction">
                   <a class="card__button" href="#">
                     <svg width="23" height="21">
-                      <use xlink:href="img/icons.svg#icon-like"/>
+                      <use xlink:href="img/sprite.svg#like"/>
                     </svg>
                   </a>
-                  <p class="card__likes">1350</p>
+                  <p class="card__likes">
+                    1350
+                  </p>
                 </div>
               </div>
             </div>
@@ -99,12 +117,14 @@
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/cards/photo-2-desktop.jpg 1x, img/cards/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/cards/photo-2-tablet.jpg 1x, img/cards/photo-2-tablet@2x.jpg 2x">
-                  <img src="img/cards/photo-2-mobile.jpg" srcset="img/cards/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+                  <img src="img/cards/photo-2-mobile.jpg" srcset="img/cards/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
                 </picture>
               </a>
               <div class="card__footer">
                 <div class="card__desctiption">
-                  <h3 class="card__title">Местная растительность</h3>
+                  <h3 class="card__title">
+                    Местная растительность
+                  </h3>
                   <p class="card__author">
                     Автор фото: Сергей
                   </p>
@@ -112,13 +132,15 @@
                 <div class="card__reaction">
                   <a class="card__button" href="#">
                     <svg width="23" height="21">
-                      <use xlink:href="img/icons.svg#icon-like"/>
+                      <use xlink:href="img/sprite.svg#like"/>
                     </svg>
                   </a>
-                  <p class="card__likes">143</p>
+                  <p class="card__likes">
+                    143
+                  </p>
                 </div>
               </div>
-            </div>
+            </div>ы
           </li>
 
           <li class="catalog__item card">
@@ -127,12 +149,14 @@
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/cards/photo-3-desktop.jpg 1x, img/cards/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/cards/photo-3-tablet.jpg 1x, img/cards/photo-3-tablet@2x.jpg 2x">
-                  <img src="img/cards/photo-3-mobile.jpg" srcset="img/cards/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+                  <img src="img/cards/photo-3-mobile.jpg" srcset="img/cards/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на Север">
                 </picture>
               </a>
               <div class="card__footer">
                 <div class="card__desctiption">
-                  <h3 class="card__title">Дорога на север</h3>
+                  <h3 class="card__title">
+                    Дорога на север
+                  </h3>
                   <p class="card__author">
                     Автор фото: Петр
                   </p>
@@ -140,10 +164,12 @@
                 <div class="card__reaction">
                   <a class="card__button" href="#">
                     <svg width="23" height="21">
-                      <use xlink:href="img/icons.svg#icon-like"/>
+                      <use xlink:href="img/sprite.svg#like"/>
                     </svg>
                   </a>
-                  <p class="card__likes">96</p>
+                  <p class="card__likes">
+                    96
+                  </p>
                 </div>
               </div>
             </div>
@@ -155,12 +181,14 @@
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/cards/photo-4-desktop.jpg 1x, img/cards/photo-4-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/cards/photo-4-tablet.jpg 1x, img/cards/photo-4-tablet@2x.jpg 2x">
-                  <img src="img/cards/photo-4-mobile.jpg" srcset="img/cards/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+                  <img src="img/cards/photo-4-mobile.jpg" srcset="img/cards/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
                 </picture>
               </a>
               <div class="card__footer card__footer--desktop">
                 <div class="card__desctiption">
-                  <h3 class="card__title">Мост дьявола</h3>
+                  <h3 class="card__title">
+                    Мост дьявола
+                  </h3>
                   <p class="card__author">
                     Автор фото: Антон
                   </p>
@@ -168,10 +196,12 @@
                 <div class="card__reaction">
                   <a class="card__button" href="#">
                     <svg width="23" height="21">
-                      <use xlink:href="img/icons.svg#icon-like"/>
+                      vz<use xlink:href="img/sprite.svg#like"/>
                     </svg>
                   </a>
-                  <p class="card__likes">254</p>
+                  <p class="card__likes">
+                    254
+                  </p>
                 </div>
               </div>
             </div>
@@ -183,10 +213,14 @@
     <!-- блок video -->
     <section class="video">
       <div class="video__container">
-        <h2 class="video__title">Все еще сомневаетесь ?</h2>
-        <p class="video__description">Смотрите видеопрезентации и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <h2 class="video__title">
+          Все еще сомневаетесь ?
+        </h2>
+        <p class="video__description">
+          Смотрите видеопрезентации и скорее за билетами, пока они не подорожали в очередной раз!
+        </p>
         <div class="video__image">
-          <img src="./img/video.jpg" alt="Превью видео">
+          <img src="img/video.jpg" width="280" height="177" alt="Превью видео">
         </div>
       </div>
     </section>
@@ -205,12 +239,14 @@
       </section>
 
       <section class="main-footer__social social">
-        <h2 class="visually-hidden">Наши соцсети</h2>
+        <h2 class="visually-hidden">
+          Наши соцсети
+        </h2>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link"  href="https://vk.com/htmlacademy">
               <svg width="24" height="14">
-                <use xlink:href="img/icons.svg#icon-vk"/>
+                <use xlink:href="img/sprite.svg#vkontakte"/>
               </svg>
               <span class="visually-hidden">
                 Вконтакте
@@ -220,7 +256,7 @@
           <li class="social__item">
             <a class="social__link"  href="tg://resolve?domain=htmlacademy/">
               <svg width="21" height="18">
-                <use xlink:href="img/icons.svg#icon-telegram"/>
+                <use xlink:href="img/sprite.svg#telegram"/>
               </svg>
               <span class="visually-hidden">
                 Телеграм
@@ -230,7 +266,7 @@
           <li class="social__item">
             <a class="social__link"  href="https://www.youtube.com/user/htmlacademyru">
               <svg width="20" height="14">
-                <use xlink:href="img/icons.svg#icon-youtube"/>
+                <use xlink:href="img/sprite.svg#youtube"/>
               </svg>
               <span class="visually-hidden">
                 Ютуб
@@ -241,17 +277,21 @@
       </section>
 
       <section class="main-footer__copyright copyright">
-        <h2 class="visually-hidden">Разработчик</h2>
+        <h2 class="visually-hidden">
+          Разработчик
+        </h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
           <svg width="24" height="29">
-            <use xlink:href="img/icons.svg#icon-html"/>
+            <use xlink:href="img/sprite.svg#html"/>
           </svg>
-          <span class="visually-hidden">Разработчик</span>
+          <span class="visually-hidden">
+            Разработчик
+          </span>
         </a>
       </section>
     </div>
   </footer>
-  <script src="navigation.js"></script>
+  <script src="js/navigation.js"></script>
 </body>
 </html>
