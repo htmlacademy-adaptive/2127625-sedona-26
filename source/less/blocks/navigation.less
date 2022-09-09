@@ -17,7 +17,7 @@
   border: 0;
   padding: 0;
 
-  z-index: 100;
+  z-index: 5;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -27,6 +27,34 @@
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.navigation--no-js {
+  z-index: 6;
+
+  @media (min-width: @tablet-width) {
+    z-index: 2;
+  }
+}
+
+.navigation--no-js .navigation__toggle {
+  display: none;
+}
+
+.navigation--closed {
+  z-index: 2;
+}
+
+.navigation--opened {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  z-index: 4;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
   }
 }
 
@@ -58,12 +86,7 @@
   background-image: url("../img/header/navigation/icon-cross-active.svg");
 }
 
-.navigation--opened .navigation__list {
-  z-index: 2;
-}
-
 .navigation--closed .navigation__list {
-  z-index: 2;
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -73,10 +96,6 @@
 
 
 .navigation__list {
-  position: absolute;
-  left: 0;
-  right: 0;
-
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -92,8 +111,6 @@
     height: 7px;
 
     box-shadow: inset 0 -7px 4px -2px fade(#000000, 20%);
-
-    z-index: 150;
 
     content: "";
   }
@@ -115,8 +132,6 @@
   box-sizing: border-box;
 
   height: 56px;
-
-  z-index: 2;
 
   text-align: center;
 
@@ -158,7 +173,6 @@
     flex: 1 1 153px;
 
     border: 0;
-    z-index: 1;
 
     &:nth-child(2) {
       margin-right: 153px;
