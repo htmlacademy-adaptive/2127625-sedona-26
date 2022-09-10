@@ -25,6 +25,9 @@
 .reasons__item {
   position: relative;
 
+  width: 100%;
+  height: auto;
+
   text-align: center;
 
   background: @bg-light;
@@ -86,7 +89,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 40px 35px 45px;
+    padding: 40px 38px 45px;
 
     &--advice {
       @media (min-width: @tablet-width) {
@@ -109,13 +112,18 @@
 
 .reasons__image {
   min-width: 320px;
-  height: 260px;
+  height: auto;
 
   background-color: @bg-brown;
 
+  &--reverse {
+    @media (min-width: @tablet-width) {
+      order: -1;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     grid-column: span 2;
-    height: auto;
   }
 }
 
@@ -136,7 +144,7 @@
 
     left: 0;
     right: 0;
-    margin: 30px auto;
+    margin: 35px auto;
   }
 }
 
@@ -158,7 +166,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 60px;
+    padding: 0 45px;
   }
 }
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -12,33 +12,49 @@
   </head>
   <body class="page__body">
     <header class="page__header header">
-      <h1 class="visually-hidden">Преимущества Седоны</h1>
-      <a class="header__link"  href="./index.html">
-        <img src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
+      <h1 class="visually-hidden">
+        Преимущества Седоны
+      </h1>
+      <a class="header__link"  href="index.html">
+        <img src="img/header/logo.svg" width="185" height="96" alt="Логотип города Седона">
       </a>
 
-      <nav class="page-header__navigation navigation">
-        <button class="navigation__toggle navigation__toggle--active" type="button">
-          <span class="visually-hidden">Меню</span>
+      <nav class="page-header__navigation navigation navigation--closed navigation--no-js">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">
+            Меню
+          </span>
         </button>
+
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--active">Главная</a>
+            <a class="navigation__link navigation__link--active">
+              Главная
+            </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="./catalog.html">Фото и видео</a>
+            <a class="navigation__link" href="catalog.html">
+              Фото и видео
+            </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="./form.html">Форма отзыва</a>
+            <a class="navigation__link" href="form.html">
+              Форма отзыва
+            </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru/">
+              HTML Academy
+            </a>
           </li>
         </ul>
       </nav>
 
       <div class="header__image">
-        <img src="img/header/slogan.svg" width="282" height="214" alt="sedona">
+        <img src="img/header/slogan.svg" width="282" height="214" alt="Добро пожаловать">
+        <svg width="1200" height="57">
+          <use xlink:href="img/sprite.svg#decorate"/>
+        </svg>
       </div>
     </header>
 
@@ -47,12 +63,12 @@
       <header class="main-header">
         <div class="main-header__container">
           <h2 class="main-header__title">
-            Седона - небольшой<br>
-            городок в Аризоне,<br>
+            Седона - небольшой
+            городок в Аризоне,
             заслуживающий большего!
           </h2>
           <p class="main-header__text">
-            Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
           </p>
         </div>
       </header>
@@ -70,7 +86,7 @@
                   Настоящий городок
                 </h3>
                 <p class="reasons__number">
-                  - №1 -
+                  &mdash; №1 &mdash;
                 </p>
                 <p class="reasons__text">
                   Седона не аттракцион для туристов, там течет своя жизнь
@@ -79,7 +95,14 @@
             </div>
 
             <div class="reasons__image">
-              <img src="img/photo-city.jpg" alt="Седона">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/reasons/city-desktop.webp 1x, img/reasons/city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/reasons/city-tablet.webp 1x, img/reasons/city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/reasons/city-mobile.webp 1x, img/reasons/city-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/reasons/city-desktop.jpg 1x, img/reasons/city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/reasons/city-tablet.jpg 1x, img/reasons/city-tablet@2x.jpg 2x">
+                <img src="img/reasons/city-mobile.jpg" srcset="img/reasons/city-mobile@2x.jpg 2x" width="520" height="260" alt="Жизнь городка">
+              </picture>
             </div>
           </li>
 
@@ -88,7 +111,7 @@
               <div class="reasons__container reasons__container--advice">
                 <div class="reasons__logo">
                   <svg width="40" height="40">
-                    <use xlink:href="img/icons.svg#icon-house"/>
+                    <use xlink:href="img/sprite.svg#house"/>
                   </svg>
                 </div>
                 <h3 class="reasons__title">
@@ -106,7 +129,7 @@
               <div class="reasons__container reasons__container--advice">
                 <div class="reasons__logo">
                   <svg width="40" height="40">
-                    <use xlink:href="img/icons.svg#icon-burger"/>
+                    <use xlink:href="img/sprite.svg#burger"/>
                   </svg>
                 </div>
                 <h3 class="reasons__title">
@@ -124,7 +147,7 @@
               <div class="reasons__container reasons__container--advice">
                 <div class="reasons__logo">
                   <svg width="40" height="40">
-                    <use xlink:href="img/icons.svg#icon-present"/>
+                    <use xlink:href="img/sprite.svg#gift"/>
                   </svg>
                 </div>
                 <h3 class="reasons__title">
@@ -144,7 +167,7 @@
                   Там есть мост дьявола
                 </h3>
                 <p class="reasons__number">
-                  - №2 -
+                  &mdash; №2 &mdash;
                 </p>
                 <p class="reasons__text">
                   Да, по нему можно пройти! Если вы осмелитесь, конечно
@@ -152,8 +175,15 @@
               </div>
             </div>
 
-            <div class="reasons__image">
-              <img src="./img/photo-bridge.jpg" alt="Мост дьявола">
+            <div class="reasons__image reasons__image--reverse">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/reasons/bridge-desktop.webp 1x, img/reasons/bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/reasons/bridge-tablet.webp 1x, img/reasons/bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/reasons/bridge-mobile.webp 1x, img/reasons/bridge-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/reasons/bridge-desktop.jpg 1x, img/reasons/bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/reasons/bridge-tablet.jpg 1x, img/reasons/bridge-tablet@2x.jpg 2x">
+                <img src="img/reasons/bridge-mobile.jpg" srcset="img/reasons/bridge-mobile@2x.jpg 2x" width="520" height="260" alt="Мост дьявола">
+              </picture>
             </div>
           </li>
 
@@ -164,7 +194,7 @@
                   Небольшая площадь
                 </h3>
                 <p class="reasons__number">
-                  - №3 -
+                  &mdash; №3 &mdash;
                 </p>
                 <p class="reasons__text">
                   Все интересные места находятся очень близко
@@ -180,7 +210,7 @@
                   Красивая дорога
                 </h3>
                 <p class="reasons__number">
-                  - №4 -
+                  &mdash; №4 &mdash;
                 </p>
                 <p class="reasons__text">
                   Ехать в Седону из Лас-Вегаса совсем не скучно!
@@ -196,7 +226,7 @@
                   Мало туристов
                 </h3>
                 <p class="reasons__number">
-                  - №5 -
+                  &mdash; №5 &mdash;
                 </p>
                 <p class="reasons__text">
                   Большинство едет в Гранд Каньон и толпится там
@@ -231,7 +261,6 @@
           Местоположение Седоны
         </h2>
         <div class="map__image">
-          <!-- <img class="image" src="./img/map.jpg" alt="Местоположение Седоны"> -->
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837276.0255379773!2d-112.66786950911128!3d34.94132996731759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8e3e34f915b1%3A0xe7378963d6fca42b!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1661838331269!5m2!1sru!2sru"
             allowfullscreen=""
             loading="lazy"
@@ -254,12 +283,14 @@
         </section>
 
         <section class="main-footer__social social">
-          <h2 class="visually-hidden">Наши соцсети</h2>
+          <h2 class="visually-hidden">
+            Наши соцсети
+          </h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link"  href="https://vk.com/htmlacademy">
                 <svg width="24" height="14">
-                  <use xlink:href="img/icons.svg#icon-vk"/>
+                  <use xlink:href="img/sprite.svg#vkontakte"/>
                 </svg>
                 <span class="visually-hidden">
                   Вконтакте
@@ -269,7 +300,7 @@
             <li class="social__item">
               <a class="social__link"  href="tg://resolve?domain=htmlacademy/">
                 <svg width="21" height="18">
-                  <use xlink:href="img/icons.svg#icon-telegram"/>
+                  <use xlink:href="img/sprite.svg#telegram"/>
                 </svg>
                 <span class="visually-hidden">
                   Телеграм
@@ -279,7 +310,7 @@
             <li class="social__item">
               <a class="social__link"  href="https://www.youtube.com/user/htmlacademyru">
                 <svg width="20" height="14">
-                  <use xlink:href="img/icons.svg#icon-youtube"/>
+                  <use xlink:href="img/sprite.svg#youtube"/>
                 </svg>
                 <span class="visually-hidden">
                   Ютуб
@@ -290,16 +321,21 @@
         </section>
 
         <section class="main-footer__copyright copyright">
-          <h2 class="visually-hidden">Разработчик</h2>
+          <h2 class="visually-hidden">
+            Разработчик
+          </h2>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             Разработано
             <svg width="24" height="29">
-              <use xlink:href="img/icons.svg#icon-html"/>
+              <use xlink:href="img/sprite.svg#html"/>
             </svg>
-            <span class="visually-hidden">Разработчик</span>
+            <span class="visually-hidden">
+              Разработчик
+            </span>
           </a>
         </section>
       </div>
     </footer>
+    <script src="js/navigation.js"></script>
   </body>
 </html>

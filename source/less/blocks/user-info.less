@@ -16,13 +16,11 @@
 
 .user-info__input {
   box-sizing: border-box;
-  display: block;
-
-  padding: 20px;
 
   width: 100%;
   height: 58px;
 
+  padding: 20px;
   border: 0;
 
   font: bold 18px/26px "PT Sans", sans-serif;
@@ -33,8 +31,8 @@
 
   background-color: @bg-input;
 
-  &--icon {
-    padding-right: 76px;
+  &[type="email"] {
+    padding-right: 70px;
   }
 
   &:hover {
@@ -47,7 +45,7 @@
 
   &:focus {
     border: 4px @bordet-input-active solid;
-    padding: 16px;
+    padding-left: 16px;
 
     background-color: @bg-input-active;
   }
