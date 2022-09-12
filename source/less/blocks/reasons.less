@@ -32,7 +32,7 @@
 
   background: @bg-light;
 
-  &--border:not(:last-child)::after {
+  &:not(:last-child)::after {
     position: absolute;
     right: 20px;
     bottom: 0;
@@ -64,6 +64,10 @@
     }
   }
 
+  &--advice::after {
+    display: none;
+  }
+
   &--main {
     color: @text-white;
 
@@ -76,6 +80,29 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  &--main::before {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    right: 0;
+
+    height: 14px;
+
+    clip-path: polygon(0% 100%, 0% 0%, 50% 100%, 100% 0%, 100% 100%);
+
+    background-color: @bg-blue;
+
+    content: "";
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--main::after {
+    display: none;
+  }
 }
 
 .reasons__container {
@@ -85,7 +112,21 @@
 
   &--advice {
     position: relative;
+    padding: 0;
+    padding-right: 20px;
     padding-left: 65px;
+  }
+
+  &--advice:first-child {
+    margin-top: 35px;
+  }
+
+  &--advice:last-child {
+    margin-bottom: 37px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -93,7 +134,7 @@
 
     &--advice {
       @media (min-width: @tablet-width) {
-        padding-top: 158px;
+        padding-top: 125px;
       }
     }
   }
@@ -103,7 +144,7 @@
 
     &--advice {
       @media (min-width: @tablet-width) {
-        padding-top: 158px;
+        padding-top: 125px;
         padding-bottom: 80px;
       }
     }
@@ -133,8 +174,8 @@
 
 .reasons__logo {
   position: absolute;
-  top: 25px;
-  left: 18px;
+  top: -10px;
+  left: 17px;
 
   width: 40px;
   height: auto;
@@ -142,6 +183,7 @@
   @media (min-width: @tablet-width) {
     width: 76px;
 
+    top: -15px;
     left: 0;
     right: 0;
     margin: 35px auto;
@@ -180,6 +222,6 @@
   margin-top: 15px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
