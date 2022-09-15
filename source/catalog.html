@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="page__body">
   <header class="page__header header">
@@ -19,7 +21,7 @@
         <img src="img/header/logo.svg" width="185" height="96" alt="Логотип города Седона">
     </a>
 
-    <nav class="page-header__navigation navigation navigation--closed navigation--no-js">
+    <nav class="page__navigation navigation navigation--closed navigation--no-js">
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">
           Меню
@@ -67,8 +69,7 @@
           Фото и видео
         </h2>
         <p class="main-header__text">
-          Не можете решиться на путешествие из-за курса?<br>
-          Фотографии помогут вам забыть о политике и экономике.
+          Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике.
         </p>
       </div>
     </header>
@@ -227,10 +228,10 @@
     <section class="video">
       <div class="video__container">
         <h2 class="video__title">
-          Все еще сомневаетесь ?
+          Все еще сомневаетесь?
         </h2>
         <p class="video__description">
-          Смотрите видеопрезентации и скорее за билетами, пока они не подорожали в очередной раз!
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
         <div class="video__image">
           <picture>

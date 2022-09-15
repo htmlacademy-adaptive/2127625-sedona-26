@@ -9,7 +9,8 @@
   background-color: @bg-white;
 
   @media (min-width: @tablet-width) {
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -32,6 +33,10 @@
 
   background: @bg-light;
 
+  @media (min-width: @desktop-width) {
+    min-height: 256px;
+  }
+
   &:not(:last-child)::after {
     position: absolute;
     right: 20px;
@@ -47,11 +52,9 @@
   }
 
   @media (min-width: @tablet-width) {
-    &--border::after {
+    &::after {
       display: none;
     }
-
-    min-height: 256px;
   }
 
   &--advice {
@@ -62,6 +65,10 @@
     @media (min-width: @tablet-width) {
       text-align: center;
     }
+  }
+
+  &--advice:nth-child(4) {
+    padding-bottom: 52px;
   }
 
   &--advice::after {
@@ -81,13 +88,13 @@
     }
   }
 
-  &--main::before {
+  &--main:first-child::before {
     position: absolute;
-    top: -14px;
+    top: -16px;
     left: 0;
     right: 0;
 
-    height: 14px;
+    height: 16px;
 
     clip-path: polygon(0% 100%, 0% 0%, 50% 100%, 100% 0%, 100% 100%);
 
@@ -108,34 +115,27 @@
 .reasons__container {
   box-sizing: border-box;
 
-  padding: 35px 20px 40px;
+  padding: 24px 35px 30px;
 
   &--advice {
-    position: relative;
-    padding: 0;
-    padding-right: 20px;
-    padding-left: 65px;
+    padding: 31px 20px 0 65px;
   }
 
-  &--advice:first-child {
-    margin-top: 35px;
-  }
-
-  &--advice:last-child {
-    margin-bottom: 37px;
-
-    @media (min-width: @tablet-width) {
-      margin-bottom: 0;
-    }
+  &--main {
+    padding: 37px 25px 40px;
   }
 
   @media (min-width: @tablet-width) {
-    padding: 40px 38px 45px;
+    padding: 40px 38px 40px;
 
     &--advice {
       @media (min-width: @tablet-width) {
-        padding-top: 125px;
+        padding: 158px 30px 27px;
       }
+    }
+
+    &--main {
+      padding: 40px 30px 43px;
     }
   }
 
@@ -143,10 +143,14 @@
     padding: 45px 65px 55px;
 
     &--advice {
-      @media (min-width: @tablet-width) {
-        padding-top: 125px;
-        padding-bottom: 80px;
+      @media (min-width: @desktop-width) {
+        padding: 158px 55px 27px;
       }
+    }
+
+    &--main {
+      padding-top: 50px;
+      padding-bottom: 53px;
     }
   }
 }
@@ -174,7 +178,7 @@
 
 .reasons__logo {
   position: absolute;
-  top: -10px;
+  top: 21px;
   left: 17px;
 
   width: 40px;
@@ -183,7 +187,7 @@
   @media (min-width: @tablet-width) {
     width: 76px;
 
-    top: -15px;
+    top: 23px;
     left: 0;
     right: 0;
     margin: 35px auto;
@@ -203,18 +207,22 @@
   line-height: 26px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 15px;
+    padding: 0 23px;
     font-size: 21px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 45px;
+    padding: 0 60px;
   }
 }
 
 .reasons__number {
   margin: 0;
   margin-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 15px;
+  }
 }
 
 .reasons__text {
@@ -222,6 +230,6 @@
   margin-top: 15px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 20px;
+    margin-top: 24px;
   }
 }

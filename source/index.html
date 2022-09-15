@@ -21,7 +21,7 @@
         <img src="img/header/logo.svg" width="185" height="96" alt="Логотип города Седона">
       </a>
 
-      <nav class="page-header__navigation navigation navigation--closed navigation--no-js">
+      <nav class="page__navigation navigation navigation--closed navigation--no-js">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">
             Меню
@@ -63,7 +63,7 @@
     <main class="main-container">
       <!-- блок main-header -->
       <header class="main-header">
-        <div class="main-header__container">
+        <div class="main-header__container main-header__container--main">
           <h2 class="main-header__title">
             Седона &mdash; небольшой
             городок в Аризоне,
@@ -83,7 +83,7 @@
         <ul class="reasons__list">
           <li class="reasons__item reasons__item--main">
             <div class="reasons__info">
-              <div class="reasons__container">
+              <div class="reasons__container reasons__container--main">
                 <h3 class="reasons__title">
                   Настоящий городок
                 </h3>
@@ -164,7 +164,7 @@
 
           <li class="reasons__item reasons__item--main">
             <div class="reasons__info">
-              <div class="reasons__container">
+              <div class="reasons__container reasons__container--main">
                 <h3 class="reasons__title">
                   Там есть мост дьявола
                 </h3>
@@ -249,8 +249,7 @@
             Заинтересовались?
           </p>
           <p class="search__description">
-            Укажите предполагаемые даты поездки,<br>
-            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search__button" href="#">
             Найти гостиницу
           </a>
@@ -264,12 +263,12 @@
         </h2>
         <div class="map__image">
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/video/map-desktop.webp 1x, img/video/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/video/map-tablet.webp 1x, img/video/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/video/map-mobile.webp 1x, img/video/map-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/video/map-desktop.jpg 1x, img/video/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/video/map-tablet.jpg 1x, img/video/map-tablet@2x.jpg 2x">
-            <img src="img/video/map-mobile.jpg.jpg" srcset="img/video/map-mobile@2x.jpg 2x" width="320" height="350" alt="Местонахождение Аризоны">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x">
+            <img src="img/map/map-mobile.jpg.jpg" srcset="img/map/map-mobile@2x.jpg 2x" width="320" height="350" alt="Местонахождение Аризоны">
           </picture>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837276.0255379773!2d-112.66786950911128!3d34.94132996731759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8e3e34f915b1%3A0xe7378963d6fca42b!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1661838331269!5m2!1sru!2sru"
             allowfullscreen=""
@@ -336,7 +335,7 @@
           </h2>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             Разработано
-            <svg width="24" height="29">
+            <svg width="26" height="34">
               <use xlink:href="img/sprite.svg#html"/>
             </svg>
             <span class="visually-hidden">

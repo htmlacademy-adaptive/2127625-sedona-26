@@ -11,26 +11,76 @@
   position: relative;
   box-sizing: border-box;
 
-  padding: 35px 20px 37px;
+  padding: 35px 20px 35px;
+
+  &--main {
+    padding-bottom: 37px;
+  }
+
+  &--form {
+    padding-bottom: 25px;
+  }
 
   @media (min-width: @tablet-width) {
     max-width: 700px;
 
     margin: 0 auto;
-    padding: 45px 90px;
+    padding: 60px 90px;
+
+    &--main {
+      padding-top: 45px;
+      padding-bottom: 43px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 60px;
+    padding-top: 90px;
     padding-bottom: 35px;
+
+    &--main {
+      padding-top: 58px;
+      padding-bottom: 30px;
+    }
+
+    &--form {
+      padding-top: 105px;
+    }
+  }
+}
+
+.main-header__container--form .main-header__text {
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 23px;
+  }
+}
+
+.main-header__container--main .main-header__text {
+  @media (min-width: @tablet-width) {
+    margin-top: 17px;
   }
 }
 
 .main-header__title {
   margin: 0;
 
+  padding: 0 10px;
+
   font-size: 18px;
   line-height: 1.45;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.main-header__container--main .main-header__title {
+  padding-bottom: 7px;
+
+  font-size: 18px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
@@ -39,10 +89,14 @@
 
 .main-header__text {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 28px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 25px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 24px;
   }
 }
 
