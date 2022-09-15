@@ -4,16 +4,17 @@
   row-gap: 16px;
   column-gap: 30px;
 
-  margin-top: 30px;
+  padding-top: 20px;
 
   @media (min-width: @tablet-width) {
     justify-content: flex-start;
 
-    padding: 0 85px;
+    padding: 30px 85px 40px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 40px;
+    padding: 58px 30px 88px 43px;
+    column-gap: 40px;
   }
 }
 
@@ -28,6 +29,7 @@
 
   position: relative;
 
+  outline: none;
   cursor: pointer;
 
   font-size: 18px;
@@ -80,6 +82,10 @@
     opacity: 0.3;
     display: block;
   }
+}
+
+.checkbox__input:focus ~ .checkbox__button::before {
+  background-color: @bg-control-active;
 }
 
 .checkbox__input:checked ~ .checkbox__button::after {

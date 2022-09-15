@@ -1,7 +1,13 @@
 .user-info {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 12px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 21px;
+  }
+
+  padding-top: 15px;
 }
 
 .user-info__label {
@@ -20,7 +26,7 @@
   width: 100%;
   height: 58px;
 
-  padding: 20px;
+  padding: 17px;
   border: 0;
 
   font: bold 18px/26px "PT Sans", sans-serif;

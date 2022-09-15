@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="page__body">
   <header class="page__header header">
@@ -19,7 +21,7 @@
         <img src="img/header/logo.svg" width="185" height="96" alt="Логотип города Седона">
     </a>
 
-    <nav class="page-header__navigation navigation navigation--closed navigation--no-js">
+    <nav class="page__navigation navigation navigation--closed navigation--no-js">
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">
           Меню
@@ -60,7 +62,7 @@
 
   <main class="main-container">
     <header class="main-header">
-      <div class="main-header__container">
+      <div class="main-header__container main-header__container--form">
         <h2 class="main-header__title">
           Оставьте свой отзыв
         </h2>
@@ -89,7 +91,7 @@
                   Имя
                   <sup>*</sup>:
                 </label>
-                <input class="user-info__input" type="text" id="name" name="name" placeholder="Артем">
+                <input class="user-info__input" type="text" id="name" name="name" placeholder="Пётр">
               </li>
 
               <li class="user-info__item">
@@ -97,14 +99,14 @@
                   Фамилия
                   <sup>*</sup>:
                 </label>
-                <input class="user-info__input" type="text" id="surname" name="surname" placeholder="Малафеев">
+                <input class="user-info__input" type="text" id="surname" name="surname" placeholder="Пустота">
               </li>
 
               <li class="user-info__item">
                 <label class="user-info__label" for="patronymic">
                   Отчество:
                 </label>
-                <input class="user-info__input" type="text" id="patronymic" name="patronymic" placeholder="Евгеньевич">
+                <input class="user-info__input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
               </li>
             </ul>
           </div>
